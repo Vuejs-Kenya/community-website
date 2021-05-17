@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">community-website</h1>
+      <h1 class="title">VueJS-Kenya Community Website</h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
