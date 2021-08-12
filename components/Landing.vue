@@ -51,7 +51,7 @@
         rounded
         justify-center
         items-center
-        shadow-2xl
+        shadow-lg
       "
     >
       <div class="text-center">
@@ -67,11 +67,11 @@
             name="email"
             id="email"
             placeholder="Email address"
-            class="py-2 px-4 shadow-lg mr-0 rounded-sm focus-none"
+            class="py-2 px-4 shadow-md mr-0 rounded-sm focus-none"
           />
           <button
             type="submit"
-            class="py-2 px-4 bg-black text-white ml-0 shadow-xl text-lg"
+            class="py-2 px-4 bg-black text-white ml-0 shadow-md text-lg"
           >
             Subscribe
           </button>
