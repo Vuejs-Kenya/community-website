@@ -1,6 +1,6 @@
 <template>
   <div class="my-36">
-    <h3 class="text-4xl text-center">Join Us</h3>
+    <h3 class="text-2xl text-center">Join Us</h3>
   </div>
 </template>
 
