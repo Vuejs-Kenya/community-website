@@ -3,7 +3,8 @@
     <div
       class="
         header
-        h-16
+        p-3
+        shadow-md
         w-full
         flex
         justify-around
@@ -11,10 +12,10 @@
         font-normal
       "
     >
-      <div class="pt-4">
+      <div>
         <a href="/">Vue.js Kenya</a>
       </div>
-      <div class="pt-4">
+      <div>
         <a href="/about" class="pr-8">About</a>
         <a href="/contact">Contact</a>
       </div>
