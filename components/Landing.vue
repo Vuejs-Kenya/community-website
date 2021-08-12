@@ -1,7 +1,7 @@
 <template>
   <div class="landing w-full bg-center bg-no-repeat bg-cover object-cover">
     <h3 class="text-5xl text-center pt-16 tracking-wider font-bold">
-      Where Vue.js Developers connect, <br />
+      Where Vue.js Developers Connect, <br />
       Collaborate & Learn Together
     </h3>
     <div class="upcoming pt-6 pb-16 text-center">
