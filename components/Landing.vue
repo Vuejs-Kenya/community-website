@@ -90,7 +90,8 @@ export default {
 
 <style scoped>
 .landing {
-  background: url('../assets/2.jpg');
+  background: url('../assets/img/vuejskenyahero.jpg');
+  background-size: cover;
   height: 30rem;
 }
 .subscription-form {
