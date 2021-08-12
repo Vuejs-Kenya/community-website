@@ -1,18 +1,18 @@
 <template>
   <div class="landing w-full bg-center bg-no-repeat bg-cover object-cover">
-    <h3 class="text-5xl text-center pt-16 tracking-wider">
-      Where Vue.js Developers connect, <br />
+    <h3 class="text-5xl text-center pt-16 tracking-wider font-bold">
+      Where Vue.js Developers Connect, <br />
       Collaborate & Learn Together
     </h3>
-    <div class="upcoming pt-20 text-center">
+    <div class="upcoming pt-6 pb-16 text-center">
       <a
         href="http://"
         target="_blank"
         rel="noopener noreferrer"
         class="
-          py-2.5
+          py-2
           px-4
-          text-xl
+          text-lg
           rounded-md
           bg-black
           text-white
@@ -29,7 +29,7 @@
           py-2
           px-4
           ml-3
-          text-xl
+          text-lg
           rounded-md
           border-2 border-gray-900
           hover:text-white
@@ -45,37 +45,33 @@
         md:w-2/4
         sm:w-2/4
         sm:mt-11
-        h-52
+        p-6
         bg-white
         flex
         rounded
         justify-center
         items-center
-        shadow-2xl
+        shadow-lg
       "
     >
       <div class="text-center">
-        <h2 class="text-2xl font-bold tracking-wider leading-10">
-          Be The First To Know
-        </h2>
-        <p class="tracking-wid text-xl leading-10">
-          Join our newsletter. 700 people already subscribed !
-        </p>
+        <h2 class="text-2xl">Be The First To Know</h2>
+        <p class="pb-3">Join our newsletter. 700 people already subscribed!</p>
         <form method="post" @submit.prevent="">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email address"
-            class="py-2 px-4 shadow-lg mr-0 rounded-sm focus-none"
+            class="py-2 px-4 shadow-md mr-0 rounded-sm focus-none"
           />
           <button
             type="submit"
-            class="py-2 px-4 bg-black text-white ml-0 shadow-xl text-lg"
+            class="py-2 px-4 bg-black text-white ml-0 shadow-md text-lg"
           >
             Subscribe
           </button>
-          <p class="text-gray-400 py-3">No spam. Unsubscribe anytime</p>
+          <p class="text-gray-500 py-3">No spam. Unsubscribe anytime</p>
         </form>
       </div>
     </div>
@@ -84,13 +80,14 @@
 
 <script>
 export default {
-  name: 'Landing',
-}
+  name: "Landing",
+};
 </script>
 
 <style scoped>
 .landing {
-  background: url('../assets/2.jpg');
+  background: url("../assets/img/vuejskenyahero.jpg");
+  background-size: cover;
   height: 30rem;
 }
 .subscription-form {
