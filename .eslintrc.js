@@ -8,7 +8,6 @@ module.exports = {
     parser: 'babel-eslint',
   },
   extends: [
-    "some-other-config-you-use",
     "prettier"
   ],
   plugins: [],
