@@ -1,5 +1,5 @@
 <template>
-  <div class="my-36">
+  <div class="mt-36 mb-20">
     <h3 class="text-2xl text-center pb-6">Join Us</h3>
       <div class="flex flex-col ">
       <div class="flex flex-row pb-4 justify-center">
