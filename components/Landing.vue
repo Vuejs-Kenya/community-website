@@ -4,15 +4,15 @@
       Where Vue.js Developers connect, <br />
       Collaborate & Learn Together
     </h3>
-    <div class="upcoming pt-20 text-center">
+    <div class="upcoming pt-6 pb-16 text-center">
       <a
         href="http://"
         target="_blank"
         rel="noopener noreferrer"
         class="
-          py-2.5
+          py-2
           px-4
-          text-xl
+          text-lg
           rounded-md
           bg-black
           text-white
@@ -29,7 +29,7 @@
           py-2
           px-4
           ml-3
-          text-xl
+          text-lg
           rounded-md
           border-2 border-gray-900
           hover:text-white
@@ -55,12 +55,8 @@
       "
     >
       <div class="text-center">
-        <h2 class="text-2xl">
-          Be The First To Know
-        </h2>
-        <p class="pb-3">
-          Join our newsletter. 700 people already subscribed!
-        </p>
+        <h2 class="text-2xl">Be The First To Know</h2>
+        <p class="pb-3">Join our newsletter. 700 people already subscribed!</p>
         <form method="post" @submit.prevent="">
           <input
             type="email"
@@ -84,13 +80,13 @@
 
 <script>
 export default {
-  name: 'Landing',
-}
+  name: "Landing",
+};
 </script>
 
 <style scoped>
 .landing {
-  background: url('../assets/img/vuejskenyahero.jpg');
+  background: url("../assets/img/vuejskenyahero.jpg");
   background-size: cover;
   height: 30rem;
 }
