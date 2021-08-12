@@ -7,7 +7,6 @@
         w-full
         flex
         justify-around
-        bg-gray-300
         text-black text-lg
         font-normal
       "
