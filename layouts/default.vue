@@ -19,6 +19,15 @@ export default {
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+  --green: #09B868;
+  --red: #CA1215;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-100: #ECECEC;
+}
+
 html{
   font-family: 'Poppins', sans-serif;
 }
