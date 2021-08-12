@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'community-website',
+    title: 'Vue.js Kenya Community-Website',
     htmlAttrs: {
       lang: 'en',
     },
