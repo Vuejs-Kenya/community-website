@@ -45,7 +45,7 @@
         md:w-2/4
         sm:w-2/4
         sm:mt-11
-        h-52
+        p-6
         bg-white
         flex
         rounded
