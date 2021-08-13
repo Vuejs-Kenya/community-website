@@ -1,4 +1,13 @@
-# community-website
+# Community-Website
+
+![Blogsite website](/assets/Design-Sample.jpg "Blogsite")
+
+
+## Build With
+
+    - NuxtJs
+
+    - Tailwind CSS
 
 ## Build Setup
 
