@@ -4,8 +4,10 @@ module.exports = {
     browser: true,
     node: true,
   },
+  "parser": "vue-eslint-parser",
   parserOptions: {
-    parser: 'babel-eslint',
+    "ecmaVersion": 7,
+    "sourceType": "module"
   },
   extends: [
     "prettier"
