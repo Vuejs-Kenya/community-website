@@ -7,7 +7,7 @@
         w-full
         flex
         justify-around
-        bg-gray-300
+        bg-white
         text-black text-lg
         font-normal
       "
@@ -30,4 +30,5 @@ export default {
 </script>
 
 <style>
+
 </style>

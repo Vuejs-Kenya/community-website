@@ -1,9 +1,10 @@
 <template>
   <div class="landing w-full bg-center bg-no-repeat bg-cover object-cover">
-    <h3 class="text-5xl text-center pt-16 tracking-wider">
+    <p class="text-5xl text-center pt-16 tracking-wider">
       Where Vue.js Developers connect, <br />
-      Collaborate & Learn Together
-    </h3>
+      
+    </p>
+    <p class="text-5xl text-center pt-3 tracking-wider">Collaborate & Learn Together</p>
     <div class="upcoming pt-20 text-center">
       <a
         href="http://"
@@ -55,7 +56,7 @@
       "
     >
     <!-- be the first to know section -->
-      <div class="text-center">
+      <div class="text-center text-black">
         <h2 class="text-2xl font-bold tracking-wider leading-10">
           Be The First To Know
         </h2>
@@ -72,13 +73,14 @@
           />
           <button
             type="submit"
-            class="py-2 px-4 bg-black text-white ml-0 shadow-xl text-lg"
+            class="py-2 px-4 bg-black text-white ml-0 shadow-xl text-lg rounded"
           >
             Subscribe
           </button>
           <p class="text-gray-400 py-3">No spam. Unsubscribe anytime</p>
         </form>
       </div>
+      <!-- end of be the first to know section -->
     </div>
   </div>
 </template>
@@ -91,7 +93,9 @@ export default {
 
 <style scoped>
 .landing {
-  background: url('../assets/img/vuejskenyahero.jpg');
+
+  background-image: url('../assets/img/vuejskenyahero.jpg');
+  box-shadow: inset 0 0 0 1000px rgba(9, 184, 104, 0.82);
   height: 30rem;
 }
 .subscription-form {
