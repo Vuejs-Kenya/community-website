@@ -1,4 +1,9 @@
-# Community-Website
+
+
+<div align="center">
+  <h1>Community Website</h1>
+  
+  </div>
 
 ![Blogsite website](/assets/Design-Sample.jpg "Blogsite")
 
