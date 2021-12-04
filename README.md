@@ -31,4 +31,19 @@ $ npm run start
 $ npm run generate
 ```
 
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `CODE_OF_CONDUCT`.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
