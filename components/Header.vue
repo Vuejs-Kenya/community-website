@@ -3,19 +3,19 @@
     <div
       class="
         header
-        p-3
-        shadow-md
+        h-16
         w-full
         flex
         justify-around
+        bg-white
         text-black text-lg
         font-normal
       "
     >
-      <div>
+      <div class="pt-4">
         <a href="/">Vue.js Kenya</a>
       </div>
-      <div>
+      <div class="pt-4">
         <a href="/about" class="pr-8">About</a>
         <a href="/contact">Contact</a>
       </div>
@@ -30,4 +30,5 @@ export default {
 </script>
 
 <style>
+
 </style>

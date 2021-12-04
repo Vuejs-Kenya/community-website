@@ -1,6 +1,6 @@
 <template>
-  <footer>
-    <div class="text-center p-3 text-sm">
+  <footer class="bg-gray-300">
+    <div class="text-center py-6 text-xl">
       <h4>Vue.js Kenya @2020 - {{ year }} MIT License</h4>
     </div>
   </footer>
@@ -19,6 +19,6 @@ export default {
 
 <style>
 footer{
-  background-color: var(--gray-100);
+  background-color: #ECECEC;
 }
 </style>
