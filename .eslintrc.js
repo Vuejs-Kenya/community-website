@@ -6,7 +6,7 @@ module.exports = {
   },
   "parser": "vue-eslint-parser",
   parserOptions: {
-    "ecmaVersion": 7,
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
   extends: [
