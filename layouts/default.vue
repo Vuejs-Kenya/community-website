@@ -6,7 +6,8 @@
   </div>
 </template>
 <script>
-const Header = () => import(/*webpackChunkName: "Header"*/ '@/components/Header')
+const Header = () =>
+  import(/*webpackChunkName: "Header"*/ '@/components/Header')
 const Footer = () =>
   import(/*webpackChunkName: "Footer"*/ '@/components/Footer')
 export default {
@@ -29,7 +30,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: aliceblue;
+  background-color: white;
 }
 html:focus-within {
   scroll-behavior: smooth;
