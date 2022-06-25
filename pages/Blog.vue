@@ -49,7 +49,7 @@ export default Vue.extend({
     ],
   },
   methods: {
-    formatDate(date: number | string) {
+    formatDate(date: Date) {
       const options: Intl.DateTimeFormatOptions = {
         month: 'long',
         day: 'numeric',
