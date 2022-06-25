@@ -28,6 +28,21 @@ $ yarn start
 $ yarn generate
 ```
 
+## Submitting your Blog or Article
+
+You can now submit blogs or articles to Vuejs Kenya Community
+
+See `content\article\Loading-Routes-Automatically-in-Vue-3.md` for ways to get started formating your article in `markdown`.
+
+Once correctly formated, and meta tags provided, open a `PR` and ask for a review. Ping any of the maintainers on the conversation section only.
+
+Article currently accepted.
+
+- [x] Vuejs and its related ecosystem.
+- [x] Any topic of choice related to Development..
+
+Please adhere to this project's `CODE_OF_CONDUCT`.
+
 ## Contributing
 
 Contributions are always welcome!
