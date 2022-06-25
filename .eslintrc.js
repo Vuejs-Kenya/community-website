@@ -4,14 +4,12 @@ module.exports = {
     browser: true,
     node: true,
   },
-  "parser": "vue-eslint-parser",
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
+    ecmaVersion: 2020,
+    sourceType: 'module',
   },
-  extends: [
-    "prettier"
-  ],
+  extends: ['prettier'],
   plugins: [],
   // add your custom rules here
   rules: {},
