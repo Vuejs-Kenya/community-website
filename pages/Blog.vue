@@ -8,14 +8,10 @@
         :key="blog"
       >
         <Singlearticle
-          :author="blog.author"
           :key="blog.slug"
-          :path="blog.path"
-          :title="blog.title"
-          :excerpt="blog.description"
+          :author="blog.author"
+          :blog="blog"
           :published="formatDate(blog.createdAt)"
-          :img="blog.img"
-          :tag="blog.tag"
         />
       </div>
     </div>
