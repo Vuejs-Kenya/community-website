@@ -8,14 +8,10 @@
         :key="blog"
       >
         <Singlearticle
-          :author="blog.author"
           :key="blog.slug"
-          :path="blog.path"
-          :title="blog.title"
-          :excerpt="blog.description"
-          :published="formatDate(blog.createdAt)"
-          :img="blog.img"
-          :tag="blog.tag"
+          :author="blog.author"
+          :blog="blog"
+          :published="blog.createdAt"
         />
       </div>
     </div>
@@ -29,6 +25,9 @@ export default Vue.extend({
   name: 'Blog',
   components: {
     Blogheader,
+  },
+  data() {
+    return {}
   },
   async asyncData({ $content, params }) {
     const blogs = await $content('articles', params.slug)
@@ -47,16 +46,6 @@ export default Vue.extend({
         content: 'Vuejs Kenya Community - Blog',
       },
     ],
-  },
-  methods: {
-    formatDate(date: Date) {
-      const options: Intl.DateTimeFormatOptions = {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-      }
-      return new Intl.DateTimeFormat('en-GB', options).format(new Date(date))
-    },
   },
 })
 </script>
