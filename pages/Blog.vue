@@ -2,9 +2,12 @@
   <article>
     <Blogheader />
     <div>
-      <div class="blogs w-full flex flex-wrap py-4">
+      <div
+        class="blogs w-full flex flex-wrap py-4"
+        v-for="blog in blogs"
+        :key="blog"
+      >
         <Singlearticle
-          v-for="blog in blogs"
           :author="blog.author"
           :key="blog.slug"
           :path="blog.path"
@@ -46,7 +49,7 @@ export default Vue.extend({
     ],
   },
   methods: {
-    formatDate(date: any) {
+    formatDate(date: number | string) {
       const options: Intl.DateTimeFormatOptions = {
         month: 'long',
         day: 'numeric',
