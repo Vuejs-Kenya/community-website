@@ -19,6 +19,7 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
+import { formatDate } from '@/helpers/helpers'
 const Blogheader = () =>
   import(/*webpackChunkName: "Blogheader"*/ '@/components/Blogheader.vue')
 export default Vue.extend({
@@ -43,16 +44,6 @@ export default Vue.extend({
         content: 'Vuejs Kenya Community - Blog',
       },
     ],
-  },
-  methods: {
-    formatDate(date: Date) {
-      const options: Intl.DateTimeFormatOptions = {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-      }
-      return new Intl.DateTimeFormat('en-GB', options).format(new Date(date))
-    },
   },
 })
 </script>

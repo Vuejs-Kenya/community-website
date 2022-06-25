@@ -53,6 +53,7 @@
 import Vue from 'vue'
 import global from '@/utils/global'
 import getSiteMeta from '@/utils/getSiteMeta'
+import { formatDate } from '@/helpers/helpers'
 export default Vue.extend({
   name: 'ArticlePage',
   async asyncData({ $content, params }) {
@@ -72,18 +73,6 @@ export default Vue.extend({
     return {
       title: this.article.title,
     }
-  },
-  methods: {
-    formatDate(sourceDate) {
-      const options = {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-      }
-      return new Intl.DateTimeFormat('en-GB', options).format(
-        new Date(sourceDate)
-      )
-    },
   },
 })
 </script>
