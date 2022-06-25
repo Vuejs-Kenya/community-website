@@ -1,12 +1,9 @@
-
-
 <div align="center">
   <h1>Community Website</h1>
   
   </div>
 
-![Blogsite website](/assets/Design-Sample.jpg "Blogsite")
-
+![Blogsite website](/assets/Design-Sample.jpg 'Blogsite')
 
 ## Build With
 
@@ -18,19 +15,18 @@
 
 ```bash
 # install dependencies
-$ npm install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn dev
 
 # build for production and launch server
-$ npm run build
-$ npm run start
+$ yarn build
+$ yarn start
 
 # generate static project
-$ npm run generate
+$ yarn generate
 ```
-
 
 ## Contributing
 
@@ -43,7 +39,5 @@ Please adhere to this project's `CODE_OF_CONDUCT`.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

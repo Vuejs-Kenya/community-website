@@ -21,7 +21,6 @@ export default {
         name: 'description',
         content: 'Vuejs Kenya Community Website',
       },
-
     ],
     link: [
       {

@@ -18,15 +18,13 @@ export default Vue.extend({
     }
   },
   methods: {
-    formatDate(sourceDate: Date) {
+    formatDate(date: any) {
       const options: Intl.DateTimeFormatOptions = {
         month: 'long',
         day: 'numeric',
         year: 'numeric',
       }
-      return new Intl.DateTimeFormat('en-GB', options).format(
-        new Date(sourceDate)
-      )
+      return new Intl.DateTimeFormat('en-GB', options).format(new Date(date))
     },
   },
 })
