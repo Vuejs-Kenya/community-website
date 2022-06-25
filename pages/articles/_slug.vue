@@ -12,7 +12,7 @@
             class="published flex items-center justify-center pl-4 font-normal text-base font-semibold text-sm"
           >
             <p>{{ article.author }}</p>
-            <p class="font-light px-4">{{ formatDate(article.createdAt) }}</p>
+            <p class="font-light px-4">{{ pubDate }}</p>
             <p class="pr-3">{{ article.readingStats.text }}</p>
           </div>
         </div>
@@ -53,9 +53,16 @@
 import Vue from 'vue'
 import global from '@/utils/global'
 import getSiteMeta from '@/utils/getSiteMeta'
-import { formatDate } from '@/helpers/helpers'
 export default Vue.extend({
   name: 'ArticlePage',
+  data() {
+    return {
+      pubDate: '',
+    }
+  },
+  mounted() {
+    this.pubDate = new Date(this.article.createdAt).toDateString()
+  },
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
     const [prev, next] = await $content('articles')

@@ -11,7 +11,7 @@
           :key="blog.slug"
           :author="blog.author"
           :blog="blog"
-          :published="formatDate(blog.createdAt)"
+          :published="blog.createdAt"
         />
       </div>
     </div>
@@ -19,13 +19,15 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
-import { formatDate } from '@/helpers/helpers'
 const Blogheader = () =>
   import(/*webpackChunkName: "Blogheader"*/ '@/components/Blogheader.vue')
 export default Vue.extend({
   name: 'Blog',
   components: {
     Blogheader,
+  },
+  data() {
+    return {}
   },
   async asyncData({ $content, params }) {
     const blogs = await $content('articles', params.slug)

@@ -21,7 +21,7 @@
             />
           </div>
           <span class="font-normal text-base font-semibold px-2"
-            >{{ published }}
+            >{{ pubDate }}
           </span>
           •
           <span class="pl-2 text-base">{{ blog.author }}</span>
@@ -56,6 +56,14 @@ export default {
       required: true,
       default: '',
     },
+  },
+  data() {
+    return {
+      pubDate: '',
+    }
+  },
+  mounted() {
+    this.pubDate = new Date(this.published).toDateString()
   },
 }
 </script>
