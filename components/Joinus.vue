@@ -6,7 +6,7 @@
         <nuxt-link to="" class="py-2 px-2">
           <div class="w-28 h-28"><Twitter /></div
         ></nuxt-link>
-        <nuxt-link to="" class="py-2 px-2"></nuxt-link>
+        <nuxt-link to="" class="py-2 px-2">
           <div class="w-28 h-28"><Meetup /></div>
         </nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
@@ -55,7 +55,19 @@ import Fb from '@/components/icons/fb.vue'
 import Signal from '@/components/icons/signal.vue'
 export default {
   name: 'Joinus',
-  components: { Twitter, Meetup, Yt, Telegram, Github, Linkedin, Whatsapp, Mail, Slack, Fb, Signal },
+  components: {
+    Twitter,
+    Meetup,
+    Yt,
+    Telegram,
+    Github,
+    Linkedin,
+    Whatsapp,
+    Mail,
+    Slack,
+    Fb,
+    Signal,
+  },
 }
 </script>
 
