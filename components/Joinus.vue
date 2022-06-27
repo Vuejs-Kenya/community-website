@@ -3,80 +3,71 @@
     <div class="joinuswrapper pt-20">
       <h3 class="text-4xl text-center pb-6">Join Us</h3>
       <div class="social-links lg:w-1/3 sm:w-1/2 my-0 mx-auto flex flex-wrap">
+        <nuxt-link to="" class="py-2 px-2">
+          <div class="w-28 h-28"><Twitter /></div
+        ></nuxt-link>
+        <nuxt-link to="" class="py-2 px-2">
+          <div class="w-28 h-28"><Meetup /></div>
+        </nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/twitter.svg"
-            alt="VueJS Kenya Twitter"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Yt /></div
+        ></nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/meetup.svg"
-            alt="VueJS Kenya meetup"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Telegram /></div
+        ></nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/yt.svg"
-            alt="VueJS Kenya youtube"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Github /></div
+        ></nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/telegram.svg"
-            alt="VueJS Kenya telegram"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Linkedin /></div
+        ></nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/github.svg"
-            alt="VueJS Kenya github"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Whatsapp /></div
+        ></nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/linkedin.svg"
-            alt="VueJS Kenya linkedIn"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Mail /></div
+        ></nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/whatsapp.svg"
-            alt="VueJS Kenya Whatsapp"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Slack /></div
+        ></nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/mail.svg"
-            alt="VueJS Kenya mail"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Fb /></div
+        ></nuxt-link>
         <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/slack.svg"
-            alt="VueJS Kenya slack"
-        /></nuxt-link>
-        <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/fb.svg"
-            alt="VueJS Kenya facebook"
-        /></nuxt-link>
-        <nuxt-link to="" class="py-2 px-2"
-          ><img
-            class="w-28 h-28"
-            src="../assets/img/icons/signal.svg"
-            alt="VueJS Kenya signal"
-        /></nuxt-link>
+          ><div class="w-28 h-28"><Signal /></div
+        ></nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Twitter from '@/components/icons/twitter.vue'
+import Meetup from '@/components/icons/meetup.vue'
+import Yt from '@/components/icons/Yt.vue'
+import Telegram from '@/components/icons/telegram.vue'
+import Github from '@/components/icons/github.vue'
+import Linkedin from '@/components/icons/linkedin.vue'
+import Whatsapp from '@/components/icons/whatsapp.vue'
+import Mail from '@/components/icons/mail.vue'
+import Slack from '@/components/icons/slack.vue'
+import Fb from '@/components/icons/fb.vue'
+import Signal from '@/components/icons/signal.vue'
 export default {
   name: 'Joinus',
+  components: {
+    Twitter,
+    Meetup,
+    Yt,
+    Telegram,
+    Github,
+    Linkedin,
+    Whatsapp,
+    Mail,
+    Slack,
+    Fb,
+    Signal,
+  },
 }
 </script>
 

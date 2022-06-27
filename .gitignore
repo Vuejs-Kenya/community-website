@@ -93,3 +93,4 @@ sw.*
 # Other
 NOTES.md
 .vscode
+package-lock.json
