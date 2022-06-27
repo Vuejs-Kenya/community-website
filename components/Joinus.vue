@@ -44,7 +44,7 @@
 <script>
 import Twitter from '@/components/icons/twitter.vue'
 import Meetup from '@/components/icons/meetup.vue'
-import Yt from '@/components/icons/yt.vue'
+import Yt from '@/components/icons/Yt.vue'
 import Telegram from '@/components/icons/telegram.vue'
 import Github from '@/components/icons/github.vue'
 import Linkedin from '@/components/icons/linkedin.vue'
