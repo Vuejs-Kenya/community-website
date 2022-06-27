@@ -6,7 +6,7 @@ export default {
   ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Vuejs Kenya Website',
+    title: 'Vuejs Kenya',
     htmlAttrs: {
       lang: 'en', // it sets the language English
     },
