@@ -1,8 +1,9 @@
+import { defineNuxtConfig } from '@nuxt/bridge'
 import global from './utils/global'
 import getRoutes from './utils/getRoutes'
 import getSiteMeta from './utils/getSiteMeta'
 const meta = getSiteMeta()
-export default {
+export default defineNuxtConfig({
   ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -49,8 +50,6 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
@@ -73,4 +72,4 @@ export default {
       return getRoutes()
     },
   },
-}
+})
