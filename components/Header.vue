@@ -8,7 +8,7 @@
       </div>
       <div class="pt-4">
         <nuxt-link to="/about" class="pr-2">About</nuxt-link>
-        <nuxt-link to="/blog" class="pr-2">Blog</nuxt-link>
+        <nuxt-link to="/blogs" class="pr-2">Blog</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
       </div>
     </div>
@@ -17,8 +17,8 @@
 
 <script>
 export default {
-  name: 'Header',
-}
+  name: "Header",
+};
 </script>
 
 <style></style>
