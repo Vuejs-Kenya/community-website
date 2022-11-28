@@ -10,7 +10,7 @@
       </div>
       <div class="py-2 flex gap-x-8">
         <nuxt-link to="/about" class="my-auto">About</nuxt-link>
-        <nuxt-link to="/blog" class="my-auto">Blog</nuxt-link>
+        <nuxt-link to="/blogs" class="my-auto">Blog</nuxt-link>
         <nuxt-link to="/contact" class="my-auto">Contact</nuxt-link>
       </div>
     </div>
@@ -19,8 +19,8 @@
 
 <script>
 export default {
-  name: 'Header',
-}
+  name: "Header",
+};
 </script>
 
 <style></style>
