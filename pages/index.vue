@@ -1,19 +1,12 @@
 <template>
-  <div>
+  <main>
     <Landing />
     <Joinus />
-  </div>
+  </main>
 </template>
-
-<script>
-const Landing = () =>
-  import(/*webpackChunkName: "Landing"*/ '@/components/Landing')
-const Joinus = () =>
-  import(/*webpackChunkName: "Joinus"*/ '@/components/Joinus')
-export default {
-  components: {
-    Landing,
-    Joinus,
-  },
-}
+<script setup lang="ts">
+useHead({
+  title: "Vuejs Kenya",
+  meta: [{ name: "description", content: "Community Website" }],
+});
 </script>
