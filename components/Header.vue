@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <header class="header">
     <div
@@ -7,18 +9,18 @@
         <a href="/">Vue.js Kenya</a>
       </div>
       <div class="pt-4">
-        <nuxt-link to="/about" class="pr-2">About</nuxt-link>
-        <nuxt-link to="/blogs" class="pr-2">Blog</nuxt-link>
-        <nuxt-link to="/contact">Contact</nuxt-link>
+        <nuxt-link to="/about" class="pr-2">
+          About
+        </nuxt-link>
+        <nuxt-link to="/blogs" class="pr-2">
+          Blog
+        </nuxt-link>
+        <nuxt-link to="/contact">
+          Contact
+        </nuxt-link>
       </div>
     </div>
   </header>
 </template>
-
-<script>
-export default {
-  name: "Header",
-};
-</script>
 
 <style></style>
