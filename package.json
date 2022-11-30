@@ -29,7 +29,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "eslint": "^8.28.0",
     "husky": "^8.0.2",
-    "nuxt": "3.0.0-rc.13"
+    "nuxt": "3.0.0"
   },
   "husky": {
     "hooks": {
