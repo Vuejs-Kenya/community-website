@@ -1,14 +1,34 @@
+<script setup lang="ts">
+defineProps({
+  path: String,
+  img: String,
+  title: String,
+  tags: Object,
+  date: String,
+  author: String,
+})
+
+function convertDate(date: string) {
+  const da = new Date(date)
+  return da.toLocaleString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
+}
+</script>
+
 <template>
   <article class="pt-8 mx-auto pb-2">
     <div
       class="flex items-center antialiased ml-2 transform transition duration-500 ease-in-out hover:scale-105"
     >
-      <router-link :to="path">
+      <router-link :to="path ?? ''">
         <img
           :src="img"
           :alt="title"
           class="object-cover object-center rounded-lg shadow-md img"
-        />
+        >
 
         <div class="relative px-4 -mt-16">
           <div class="bg-white p-6 rounded-lg shadow-lg">
@@ -33,9 +53,9 @@
                   class="h-8 w-8 rounded-full bg-no-repeat bg-cover border-2 border-slate-400"
                   :src="img"
                   :alt="`Author image of ${author}`"
-                />
+                >
               </div>
-              <span class="px-2 text-sm">{{ convertDate(date) }} </span>
+              <span class="px-2 text-sm">{{ convertDate(date ?? "") }} </span>
               •
               <span class="pl-2 text-sm font-semibold">{{ author }}</span>
             </div>
@@ -46,25 +66,6 @@
   </article>
 </template>
 
-<script setup>
-defineProps({
-  path: String,
-  img: String,
-  title: String,
-  tags: Object,
-  date: String,
-  author: String,
-});
-
-function convertDate(date) {
-  const da = new Date(date);
-  return da.toLocaleString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
-</script>
 <style>
 .img {
   width: 400px;

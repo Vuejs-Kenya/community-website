@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'header': ['Cabinet Grotesk', ...defaultTheme.fontFamily.sans],
-        'sans': ['Satoshi', ...defaultTheme.fontFamily.sans],
+        header: ['Cabinet Grotesk', ...defaultTheme.fontFamily.sans],
+        sans: ['Satoshi', ...defaultTheme.fontFamily.sans],
       },
     },
   },

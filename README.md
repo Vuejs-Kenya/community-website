@@ -3,15 +3,15 @@
   
   </div>
 
-![Blogsite website](/assets/Design-Sample.jpg 'Blogsite')
+![Blogsite website](/assets/Design-Sample.jpg "Blogsite")
 
 ## Build With
 
-    - NuxtJs
-
+    - Nuxt
+    - Nuxt Content
     - Tailwind CSS
 
-## Build Setup
+## Getting started
 
 ```bash
 # install dependencies
@@ -22,24 +22,22 @@ $ yarn dev
 
 # build for production and launch server
 $ yarn build
-$ yarn start
+$ yarn preview
 
-# generate static project
-$ yarn generate
 ```
 
-## Submitting your Blog or Article
+## Submitting your article to the community blog
 
-You can now submit blogs or articles to Vuejs Kenya Community
+You can now submit blogs or articles to Vuejs Kenya Community blog
 
-See `content\article\Loading-Routes-Automatically-in-Vue-3.md` for ways to get started formating your article in `markdown`.
+See `content\blogs\Loading-Routes-Automatically-in-Vue-3.md` to get started formating your article in `markdown`.
 
 Once correctly formated, and meta tags provided, open a `PR` and ask for a review. Ping any of the maintainers on the conversation section only.
 
 Article currently accepted.
 
 - [x] Vuejs and its related ecosystem.
-- [x] Any topic of choice related to Development..
+- [x] Any topic of choice (tips/tricks) related to software engineering.
 
 Please adhere to this project's `CODE_OF_CONDUCT`.
 
@@ -55,4 +53,4 @@ Please adhere to this project's `CODE_OF_CONDUCT`.
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.com).

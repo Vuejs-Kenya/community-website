@@ -1,10 +1,10 @@
 export default {
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   content: {
     highlight: {
       theme: {
-        default: "material-palenight",
-        dark: "github-dark",
+        default: 'material-palenight',
+        dark: 'github-dark',
       },
     },
     markdown: {
@@ -14,8 +14,8 @@ export default {
       },
     },
   },
-  link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   tailwindcss: {
-    cssPath: "~/assets/css/main.css",
+    cssPath: '~/assets/css/main.css',
   },
-};
+}
