@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <header class="header px-3 md:px-5">
     <div
@@ -9,18 +11,18 @@
         </nuxt-link>
       </div>
       <div class="py-2 flex gap-x-8">
-        <nuxt-link to="/about" class="my-auto">About</nuxt-link>
-        <nuxt-link to="/blogs" class="my-auto">Blog</nuxt-link>
-        <nuxt-link to="/contact" class="my-auto">Contact</nuxt-link>
+        <nuxt-link to="/about" class="my-auto">
+          About
+        </nuxt-link>
+        <nuxt-link to="/blogs" class="my-auto">
+          Blog
+        </nuxt-link>
+        <nuxt-link to="/contact" class="my-auto">
+          Contact
+        </nuxt-link>
       </div>
     </div>
   </header>
 </template>
-
-<script>
-export default {
-  name: "Header",
-};
-</script>
 
 <style></style>

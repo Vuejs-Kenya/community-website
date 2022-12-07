@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const year = new Date().getFullYear()
+</script>
+
 <template>
   <footer class="bg-gray-300 w-full">
     <div class="text-center py-6 text-xl">
@@ -5,17 +9,6 @@
     </div>
   </footer>
 </template>
-
-<script>
-export default {
-  name: "Footer",
-  data() {
-    return {
-      year: new Date().getFullYear(),
-    };
-  },
-};
-</script>
 
 <style>
 footer {

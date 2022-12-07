@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div>
     <div class="landing w-full bg-center bg-no-repeat bg-cover object-cover">
@@ -68,11 +70,11 @@
         </p>
         <form method="post" @submit.prevent="" class="mt-2">
           <input
+            id="email"
             type="email"
             name="email"
-            id="email"
             placeholder="Email address"
-            class="py-2.5 px-4 shadow-sm mr-0 rounded-sm focus-none w-full sm:w-3/5 border border-gray-300"
+            class="py-2.5 px-4 shadow-lg mr-0 rounded-sm focus-none w-full sm:w-3/5 border border-gray-300"
           />
           <button
             type="submit"
@@ -80,7 +82,9 @@
           >
             Subscribe
           </button>
-          <p class="text-gray-400 py-3">No spam. Unsubscribe anytime</p>
+          <p class="text-gray-400 py-3">
+            No spam. Unsubscribe anytime
+          </p>
         </form>
       </div>
       <!-- end of be the first to know section -->
@@ -88,15 +92,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Landing',
-}
-</script>
-
 <style scoped>
 .landing {
-  background-image: url('../assets/img/vuejskenyahero.jpg');
+  background-image: url("../assets/img/vuejskenyahero.jpg");
   box-shadow: inset 0 0 0 1000px rgba(9, 184, 104, 0.82);
   height: 65vh;
 }

@@ -2,6 +2,6 @@
   <div>
     <Header />
     <NuxtPage />
-    <Footer v-if="$route.path !== `/`" />
+    <Footer />
   </div>
 </template>
