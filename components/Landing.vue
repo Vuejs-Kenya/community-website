@@ -4,7 +4,7 @@
   <div>
     <div class="landing w-full bg-center bg-no-repeat bg-cover object-cover">
       <p class="text-3xl lg:text-5xl text-center pt-16 md:pt-28 tracking-wider font-medium text-white">
-        Where Vue.js Developers connect, <br />
+        Where Vue.js Developers connect, <br>
       </p>
       <p class="text-3xl lg:text-5xl text-center pt-3 tracking-wider font-medium text-white">
         Collaborate & Learn Together
@@ -68,14 +68,14 @@
         <p class="tracking-wid text-xl leading-10 px-4">
           Join our newsletter. 700 people already subscribed !
         </p>
-        <form method="post" @submit.prevent="" class="mt-2">
+        <form method="post" class="mt-2" @submit.prevent="">
           <input
             id="email"
             type="email"
             name="email"
             placeholder="Email address"
             class="py-2.5 px-4 shadow-lg mr-0 rounded-sm focus-none w-full sm:w-3/5 border border-gray-300"
-          />
+          >
           <button
             type="submit"
             class="py-2.5 px-4 bg-black text-white ml-0 shadow-xl text-xl rounded mt-4 sm:mt-0"

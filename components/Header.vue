@@ -5,7 +5,7 @@
     <div
       class="header h-20 w-full flex justify-between bg-white text-black text-lg font-normal lg:container mx-auto"
     >
-      <div >
+      <div>
         <nuxt-link to="/" class="flex h-full">
           <img src="~/assets/vuejskenyalogo.png" alt="Vue.js Kenya" class="h-full">
           <span class="hidden sm:block my-auto font-semibold">
