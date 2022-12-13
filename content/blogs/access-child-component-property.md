@@ -15,8 +15,12 @@ tags: ["VUEJS", "TIP"]
 
 attribution: Photo by Pixabay on Pexelry
 
+author: John Philip
+
 createdAt: 12/10/2022
 ---
+
+This article was originally posted on [johnphilip.dev](https://johnphilip.dev/articles/access-components-propperties-in-vuejs)
 
 When building Vuejs applications, you may need to access child component properties from an outside component. This may be in scenarios where the need to emit events is unnecessary.
 
