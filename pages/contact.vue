@@ -6,5 +6,5 @@ useHead({
 </script>
 
 <template>
-  <Contact/>
+  <Contact />
 </template>
