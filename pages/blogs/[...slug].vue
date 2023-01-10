@@ -63,10 +63,13 @@ const linkedinShareLink = computed(() => {
 
 const copyToClipboard = async () => {
   try {
-    await navigator.clipboard.writeText(blogUrl.value)
-    setToastOpen(true)
-  } catch (error) {
-    alert(error);
+    if ('clipboard' in navigator) {
+      await navigator.clipboard.writeText(blogUrl.value)
+      setToastOpen(true)
+    }
+  }
+  catch (error) {
+    console.error(error)
   }
 }
 </script>
