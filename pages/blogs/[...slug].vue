@@ -6,6 +6,8 @@ import Linkedin from '@/components/icons/linkedin.vue'
 import Telegram from '@/components/icons/telegram.vue'
 import Share from '@/components/icons/Share.vue'
 import Reddit from '@/components/icons/Reddit.vue'
+import Whatsapp from '@/components/icons/whatsapp.vue'
+import Mail from '@/components/icons/mail.vue'
 import Toast from '@/components/Toast.vue'
 
 const { path, ...route } = useRoute()
@@ -67,6 +69,16 @@ const redditShareLink = computed(() => {
   return `https://reddit.com/submit?url=${blogUrl.value}&title=${data.value.article.title}`
 })
 
+// share to whatsapp
+const whatsappShareLink = computed(() => {
+  return `https://wa.me/?text=${encodeURIComponent(`${data.value.article.title}\n\n${blogUrl.value}`)}`
+})
+
+// share to email
+const emailShareLink = computed(() => {
+  return `mailto:?subject=${data.value.article.title}&body=${blogUrl.value}`
+})
+
 const copyToClipboard = async () => {
   try {
     if ('clipboard' in navigator) {
@@ -124,6 +136,12 @@ const copyToClipboard = async () => {
           </a>
           <a :href="redditShareLink" class="h-6 w-6" target="_blank">
             <Reddit class="fill-gray-400" />
+          </a>
+          <a :href="whatsappShareLink" class="h-6 w-6" target="_blank">
+            <Whatsapp :height="24" :width="24" fill-class="fill-gray-400" />
+          </a>
+          <a :href="emailShareLink" class="h-6 w-6" target="_blank">
+            <Mail :height="24" :width="24" fill-class="fill-gray-400" />
           </a>
           <a href="#" class="h-6 w-6" @click.prevent="copyToClipboard">
             <Share :height="24" :width="24" stroke-class="stroke-gray-400" />
