@@ -5,6 +5,7 @@ import Twitter from '@/components/icons/twitter.vue'
 import Linkedin from '@/components/icons/linkedin.vue'
 import Telegram from '@/components/icons/telegram.vue'
 import Share from '@/components/icons/Share.vue'
+import Reddit from '@/components/icons/Reddit.vue'
 import Toast from '@/components/Toast.vue'
 
 const { path, ...route } = useRoute()
@@ -61,6 +62,11 @@ const linkedinShareLink = computed(() => {
   return `https://www.linkedin.com/sharing/share-offsite/?url=${blogUrl.value}`
 })
 
+// share to reddit
+const redditShareLink = computed(() => {
+  return `https://reddit.com/submit?url=${blogUrl.value}&title=${data.value.article.title}`
+})
+
 const copyToClipboard = async () => {
   try {
     if ('clipboard' in navigator) {
@@ -115,6 +121,9 @@ const copyToClipboard = async () => {
           </a>
           <a :href="telegramShareLink" class="h-6 w-6" target="_blank">
             <Telegram :height="24" :width="24" fill-class="fill-gray-400" />
+          </a>
+          <a :href="redditShareLink" class="h-6 w-6" target="_blank">
+            <Reddit class="fill-gray-400" />
           </a>
           <a href="#" class="h-6 w-6" @click.prevent="copyToClipboard">
             <Share :height="24" :width="24" stroke-class="stroke-gray-400" />
