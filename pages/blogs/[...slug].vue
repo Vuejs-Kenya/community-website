@@ -178,7 +178,7 @@ const copyToClipboard = async () => {
         </li>
       </ul>
     </header>
-    <Hr />
+    <hr>
     <section class="article-section mb-2">
       <article class="article">
         <ContentRenderer :value="data.article">
