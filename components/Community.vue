@@ -3,15 +3,13 @@
 <template>
   <div class="bg-black text-white py-4">
     <div class="w-3/5 mx-auto">
-      <h1 class="text-3xl pt-4">
-        We are an awesome community
-      </h1>
-      <p class="pt-2">
+      <h1 class="text-3xl pt-4">We are an awesome community</h1>
+      <p class="pt-4">
         Welcome to Kenya's Vue.js community! We're a dynamic group of
         developers, designers, and tech enthusiasts who share a passion for
         building.
       </p>
-      <p class="pt-2">
+      <p class="pt-3">
         Our community is committed to promoting the use of Vue.js and other
         cutting-edge technologies in Kenya, through regular meetups, workshops,
         hackathons, and other events. Whether you're an experienced developer or
@@ -19,7 +17,7 @@
         supportive community of like-minded individuals. Join us today and take
         your Vue.js skills to the next level!
       </p>
-      <div class="py-5">
+      <div class="py-6">
         <a
           href="https://t.me/+UrkVB6D63bnDom4l"
           target="_blank"
