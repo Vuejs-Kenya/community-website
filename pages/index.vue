@@ -24,10 +24,7 @@
     <Meta name="twitter:card" content="summary_large_image" />
     <Meta name="twitter:site" content="@kenyavue" />
     <Meta name="twitter:creator" content="@kenyavue" />
-    <Meta
-      name="twitter:title"
-      content="Vuejs Kenya Community"
-    />
+    <Meta name="twitter:title" content="Vuejs Kenya Community" />
     <Meta
       name="twitter:description"
       content="Vuejs Kenya is an inclusive and progressive community for all developers"
@@ -38,6 +35,7 @@
   </Head>
   <main>
     <Landing />
+    <Community />
     <Joinus />
   </main>
 </template>
