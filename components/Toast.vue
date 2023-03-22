@@ -40,18 +40,7 @@ watch(
     <div class="fixed flex justify-center w-full top-10">
       <div
         id="toast-simple"
-        class="
-          mx-3
-          flex
-          items-center
-          p-4
-          w-full
-          max-w-lg
-          text-gray-400
-          bg-gray-800
-          rounded-lg
-          shadow
-        "
+        class="mx-3 flex items-center p-4 w-full max-w-lg text-gray-400 bg-gray-800 rounded-lg shadow"
         role="alert"
       >
         <slot name="toastIcon" />
@@ -61,23 +50,7 @@ watch(
         <button
           v-if="closable"
           type="button"
-          class="
-            ml-auto
-            bg-white
-            text-gray-400
-            hover:text-gray-900
-            rounded-lg
-            focus:ring-2 focus:ring-gray-300
-            p-1.5
-            hover:bg-gray-100
-            inline-flex
-            h-8
-            w-8
-            dark:text-gray-500
-            dark:hover:text-white
-            dark:bg-gray-800
-            dark:hover:bg-gray-700
-          "
+          class="ml-auto bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
           data-dismiss-target="#toast-success"
           aria-label="Close"
           @click="$emit('close')"
