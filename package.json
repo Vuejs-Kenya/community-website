@@ -25,7 +25,7 @@
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
-    "@nuxtjs/tailwindcss": "^6.6.4",
+    "@nuxtjs/tailwindcss": "^6.6.5",
     "@tailwindcss/typography": "^0.5.9",
     "eslint": "^8.37.0",
     "husky": "^8.0.3",
