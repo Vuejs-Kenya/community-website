@@ -21,7 +21,7 @@
     "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.34.0",
+    "@antfu/eslint-config": "^0.38.4",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
