@@ -1,10 +1,16 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="landing h-64 w-full bg-center bg-no-repeat bg-cover object-cover">
-    <p class="text-5xl text-center py-20 tracking-wider">
-      Vuejs Kenya Blog
-    </p>
+  <div
+    class="flex items-center justify-center object-cover w-full bg-center bg-no-repeat bg-cover h-72 landing"
+  >
+    <div>
+      <p class="text-5xl tracking-wider text-center">Vuejs Kenya Blog</p>
+      <p class="pt-6 text-center">
+        Community Members Share their Thoughts: Exploring Diverse Perspectives
+        through Articles
+      </p>
+    </div>
   </div>
 </template>
 

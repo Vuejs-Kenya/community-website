@@ -3,27 +3,27 @@
 <template>
   <div>
     <div
-      class="landing h-[40vh] w-full bg-center bg-no-repeat bg-cover object-cover flex justify-center items-center"
+      class="landing h-[50vh] w-full bg-center bg-no-repeat bg-cover object-cover flex justify-center items-center"
     >
       <div>
         <p
-          class="text-3xl lg:text-5xl text-center tracking-wider font-medium text-white"
+          class="text-3xl font-medium tracking-wider text-center text-white lg:text-5xl"
         >
-          Where Vue.js Developers Connect, <br>
+          Where Vue.js Developers Connect, <br />
         </p>
         <p
-          class="text-3xl lg:text-5xl text-center pt-3 tracking-wider font-medium text-white"
+          class="pt-3 text-3xl font-medium tracking-wider text-center text-white lg:text-5xl"
         >
           Collaborate & Learn Together
         </p>
         <div
-          class="upcoming pt-10 text-center flex flex-wrap justify-center gap-x-6"
+          class="flex flex-wrap justify-center pt-10 text-center upcoming gap-x-6"
         >
           <a
             href="https://www.meetup.com/vue-js-kenya/"
             target="_blank"
             rel="noopener noreferrer"
-            class="py-2.5 px-4 text-xl rounded-sm bg-white"
+            class="px-6 py-2.5 text-xl bg-white rounded-lg"
           >
             Join Us
           </a>
@@ -31,7 +31,7 @@
             href="https://www.meetup.com/vue-js-kenya/"
             target="_blank"
             rel="noopener noreferrer"
-            class="py-2 px-4 ml-3 text-xl rounded-sm bg-green-500"
+            class="px-6 py-2.5 text-xl bg-green-500 rounded-lg"
           >
             Upcoming Events
           </a>

@@ -36,6 +36,7 @@
   <main>
     <Landing />
     <Community />
+    <PreviousSpeakers />
     <Joinus />
   </main>
 </template>
