@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { speakerInfo } from "@/utils/interfaces";
+import type { speakerInfo } from '@/utils/interfaces'
 
 const props = defineProps({
   speaker: {
     type: Object as () => speakerInfo,
     required: true,
   },
-});
+})
 </script>
 
 <template>
@@ -22,7 +22,7 @@ const props = defineProps({
       loading="eager"
       class="object-cover mx-auto w-[200px] h-[200px] rounded-full shadow border border-gray-300"
       decoding="async"
-    />
+    >
 
     <h1
       class="pt-5 text-2xl font-semibold text-center text-gray-700 dark:text-white"

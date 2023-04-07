@@ -3,7 +3,9 @@
 <template>
   <div class="py-4">
     <div class="w-4/5 mx-auto lg:w-3/5">
-      <h1 class="pt-4 text-4xl font-semibold">We are an awesome community</h1>
+      <h1 class="pt-4 text-4xl font-semibold">
+        We are an awesome community
+      </h1>
       <div class="text-xl">
         <p class="pt-4">
           Welcome to Kenya's Vue.js community! We're a dynamic group of

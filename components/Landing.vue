@@ -9,7 +9,7 @@
         <p
           class="text-3xl font-medium tracking-wider text-center text-white lg:text-5xl"
         >
-          Where Vue.js Developers Connect, <br />
+          Where Vue.js Developers Connect, <br>
         </p>
         <p
           class="pt-3 text-3xl font-medium tracking-wider text-center text-white lg:text-5xl"

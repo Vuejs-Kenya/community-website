@@ -7,15 +7,15 @@ defineProps({
   date: String,
   authorsNames: Array<string>,
   authorsImages: Array<string>,
-});
+})
 
 function convertDate(date: string) {
-  const da = new Date(date);
-  return da.toLocaleString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  const da = new Date(date)
+  return da.toLocaleString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
 }
 </script>
 
@@ -32,7 +32,7 @@ function convertDate(date: string) {
           loading="eager"
           width="370"
           height="240"
-        />
+        >
 
         <div>
           <div class="py-6 bg-white">
@@ -60,7 +60,7 @@ function convertDate(date: string) {
                     authorsNames[authorsNames?.length - 1]
                   }`"
                   loading="eager"
-                />
+                >
               </div>
               <div v-if="authorsNames?.length === 1">
                 <span class="px-2 text-sm font-semibold">{{
@@ -73,8 +73,7 @@ function convertDate(date: string) {
                   <span
                     v-if="index < authorsNames.length - 1"
                     class="font-normal"
-                    >&amp;</span
-                  >
+                  >&amp;</span>
                 </span>
               </div>
               <p class="w-2 h-2 mx-2 bg-gray-700 rounded-full" />

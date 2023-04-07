@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const router = useRoute();
-console.log(router.path);
+const router = useRoute()
 </script>
 
 <template>
@@ -14,7 +13,7 @@ console.log(router.path);
             src="~/assets/vuejskenyalogo.png"
             alt="Vue.js Kenya"
             class="object-cover h-14 w-14"
-          />
+          >
           <span class="hidden my-auto font-semibold sm:block">
             Vue.js Kenya
           </span>

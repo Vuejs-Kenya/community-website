@@ -1,14 +1,14 @@
 <script setup lang="ts">
 useHead({
-  title: "Blog",
+  title: 'Blog',
   meta: [
     {
-      name: "description",
+      name: 'description',
       content:
-        "Listicle of all the articles from Vuejs Kenya community members and contributors",
+        'Listicle of all the articles from Vuejs Kenya community members and contributors',
     },
   ],
-});
+})
 </script>
 
 <template>
