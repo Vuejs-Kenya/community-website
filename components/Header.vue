@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const router = useRoute()
+const router = useRoute();
 </script>
 
 <template>
-  <header class="sticky top-0 bg-white">
+  <header class="sticky top-0 z-50 bg-white">
     <div
       class="flex justify-around w-full h-16 mx-auto text-lg font-normal text-black bg-white lg:container"
     >
@@ -13,7 +13,7 @@ const router = useRoute()
             src="~/assets/vuejskenyalogo.png"
             alt="Vue.js Kenya"
             class="object-cover h-14 w-14"
-          >
+          />
           <span class="hidden my-auto font-semibold sm:block">
             Vue.js Kenya
           </span>
