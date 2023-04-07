@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const router = useRoute();
+const router = useRoute()
 </script>
 
 <template>
@@ -13,7 +13,7 @@ const router = useRoute();
             src="~/assets/vuejskenyalogo.png"
             alt="Vue.js Kenya"
             class="object-cover h-14 w-14"
-          />
+          >
           <span class="hidden my-auto font-semibold sm:block">
             Vue.js Kenya
           </span>
