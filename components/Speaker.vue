@@ -41,7 +41,7 @@ const props = defineProps({
         :href="speaker.socials.twitter"
         target="_blank"
         rel="noopener noreferrer"
-        class="mx-2 mt-1 text-gray-600 w-[20px] h-[20px] fill transition-colors duration-300 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+        class="mx-2 mt-1 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
         aria-label="Twitter"
       >
         <svg
@@ -60,7 +60,7 @@ const props = defineProps({
         href="#"
         target="_blank"
         rel="noopener noreferrer"
-        class="mx-2 w-[20px] h-[20px] fill text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+        class="mx-2 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
         aria-label="Facebook"
       >
         <svg
@@ -79,7 +79,7 @@ const props = defineProps({
         :href="speaker.socials.github"
         target="_blank"
         rel="noopener noreferrer"
-        class="mx-2 text-gray-600 w-[20px] h-[20px] fill transition-colors duration-300 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+        class="mx-2 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
         aria-label="Github"
       >
         <svg

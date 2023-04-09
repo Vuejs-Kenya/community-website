@@ -15,29 +15,41 @@ const router = useRoute()
             class="object-cover h-14 w-14"
           >
           <span class="hidden my-auto font-semibold sm:block">
-            Vue.js Kenya
+            Vuejs Kenya
           </span>
         </nuxt-link>
       </div>
       <div class="flex py-2 gap-x-8">
         <nuxt-link
           to="/about"
-          class="my-auto"
-          :class="router.path === '/about' ? `font-bold` : ` `"
+          class="my-auto transition hover:underline hover:underline-offset-8 hover:font-semibold"
+          :class="
+            router.path === '/about'
+              ? `font-bold underline underline-offset-8`
+              : ` `
+          "
         >
           About
         </nuxt-link>
         <nuxt-link
           to="/blogs"
-          class="my-auto"
-          :class="router.path === '/blogs' ? `font-semibold` : ` `"
+          class="my-auto transition hover:underline hover:underline-offset-8 hover:font-semibold"
+          :class="
+            router.path === '/blogs'
+              ? `font-semibold underline underline-offset-8`
+              : ` `
+          "
         >
           Blog
         </nuxt-link>
         <nuxt-link
           to="/contact"
-          class="my-auto"
-          :class="router.path === '/contact' ? `font-bold` : ` `"
+          class="my-auto transition hover:underline hover:underline-offset-8 hover:font-semibold"
+          :class="
+            router.path === '/contact'
+              ? `font-semibold underline underline-offset-8`
+              : ` `
+          "
         >
           Contact
         </nuxt-link>

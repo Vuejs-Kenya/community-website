@@ -34,7 +34,7 @@ useHead({
 // copy to clipboard toast
 const openToast = ref(false)
 
-const setToastOpen = open => openToast.value = open
+const setToastOpen = open => (openToast.value = open)
 
 // blog full url
 const blogUrl = computed(() =>
@@ -71,7 +71,9 @@ const redditShareLink = computed(() => {
 
 // share to whatsapp
 const whatsappShareLink = computed(() => {
-  return `https://wa.me/?text=${encodeURIComponent(`${data.value.article.title}\n\n${blogUrl.value}`)}`
+  return `https://wa.me/?text=${encodeURIComponent(
+    `${data.value.article.title}\n\n${blogUrl.value}`,
+  )}`
 })
 
 // share to email
@@ -94,7 +96,11 @@ const copyToClipboard = async () => {
 
 <template>
   <main id="main" class="article-main">
-    <Toast :show="openToast" message="Link copied to clipboard." @close="setToastOpen(false)">
+    <Toast
+      :show="openToast"
+      message="Link copied to clipboard."
+      @close="setToastOpen(false)"
+    >
       <template #toastIcon>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -108,78 +114,82 @@ const copyToClipboard = async () => {
           stroke-linejoin="round"
         >
           <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-          <path
-            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-          />
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
         </svg>
       </template>
     </Toast>
     <header v-if="data.article" class="article-header">
-      <div class="mb-5 sm:flex items-center">
-        <p class="text-sm font-bold">
-          {{ data.article.author }}
-          <span class="mx-1"> . </span>
+      <div class="flex items-center justify-between mb-5 gap-x-7">
+        <div class="flex items-center gap-x-2 lg:gap-x-4">
+          <p
+            v-for="(author, index) in data.article.authorsNames"
+            :key="index"
+            class="text-lg font-bold"
+          >
+            {{ author }}
+          </p>
+          <p class="w-2 h-2 bg-gray-600 rounded-full" />
           <span>
             {{ readingTime(data.article) }}
-            Min read
+            min read
           </span>
-        </p>
-        <div class="sharing ml-auto flex gap-x-3 my-5 sm:my-0 items-center">
-          <a :href="twitterShareLink" class="h-6 w-6" target="_blank">
+        </div>
+        <div class="flex items-center my-5 ml-auto sharing gap-x-3 sm:my-0">
+          <a :href="twitterShareLink" class="w-6 h-6" target="_blank">
             <Twitter :height="24" :width="24" fill-class="fill-gray-400" />
           </a>
-          <a :href="linkedinShareLink" class="h-6 w-6" target="_blank">
+          <a :href="linkedinShareLink" class="w-6 h-6" target="_blank">
             <Linkedin :height="24" :width="24" fill-class="fill-gray-400" />
           </a>
-          <a :href="telegramShareLink" class="h-6 w-6" target="_blank">
+          <a :href="telegramShareLink" class="w-6 h-6" target="_blank">
             <Telegram :height="24" :width="24" fill-class="fill-gray-400" />
           </a>
-          <a :href="redditShareLink" class="h-6 w-6" target="_blank">
+          <a :href="redditShareLink" class="w-6 h-6" target="_blank">
             <Reddit class="fill-gray-400" />
           </a>
-          <a :href="whatsappShareLink" class="h-6 w-6" target="_blank">
+          <a :href="whatsappShareLink" class="w-6 h-6" target="_blank">
             <Whatsapp :height="24" :width="24" fill-class="fill-gray-400" />
           </a>
-          <a :href="emailShareLink" class="h-6 w-6" target="_blank">
+          <a :href="emailShareLink" class="w-6 h-6" target="_blank">
             <Mail :height="24" :width="24" fill-class="fill-gray-400" />
           </a>
-          <a href="#" class="h-6 w-6" @click.prevent="copyToClipboard">
+          <a href="#" class="w-6 h-6" @click.prevent="copyToClipboard">
             <Share :height="24" :width="24" stroke-class="stroke-gray-400" />
           </a>
         </div>
       </div>
-      <h1 class="heading">
+      <h1 class="pt-3 heading">
         {{ data.article.title }}
       </h1>
-      <div class="supporting my-3">
+      <div class="my-4 supporting">
         <span>
           {{ data.article.description }}
         </span>
       </div>
 
-      <div class="img-cont h-[300] my-4">
+      <div class="img-cont h-[300px] lg:h-[600px] my-4">
         <img
           :src="`${data.article.imgurl}`"
           :alt="data.article.title"
-          class="rounded"
+          class="rounded-lg"
         >
       </div>
       <a
         :href="`${data.article.imgurl}`"
         target="_blank"
         rel="noopener noreferrer"
-        class="no-underline hover:underline text-sm my-2 flex justify-center"
+        class="flex justify-center my-2 text-base no-underline hover:underline hover:underline-offset-8"
       >
         {{ data.article.attribution }}
       </a>
-      <ul class="article-tags">
+      <ul class="flex gap-x-4">
         <li v-for="(tag, i) in data.article.tags" :key="i" class="tag">
           {{ tag }}
         </li>
       </ul>
     </header>
     <hr>
-    <section class="article-section mb-2">
+    <section class="mb-2 article-section">
       <article class="article">
         <ContentRenderer :value="data.article">
           <ContentRendererMarkdown :value="data.article" />

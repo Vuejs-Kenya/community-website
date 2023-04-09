@@ -38,23 +38,19 @@ function convertDate(date: string) {
           <div class="py-6 bg-white">
             <div class="flex items-baseline pb-2">
               <ul>
-                <li
-                  v-for="tag in tags"
-                  :key="tag"
-                  class="inline-block bg-gray-200 rounded-md text-xs px-2 py-0.5 mr-2 uppercase leading-relaxed"
-                >
+                <li v-for="tag in tags" :key="tag" class="tag">
                   {{ tag }}
                 </li>
               </ul>
             </div>
 
-            <h4 class="py-0 my-2 text-lg font-semibold leading-tight truncate">
+            <h4 class="py-2 text-xl font-semibold leading-tight truncate">
               {{ title }}
             </h4>
-            <div class="flex items-center mt-2 leading-relaxed">
+            <div class="flex items-center mt-2 leading-relaxed gap-x-2">
               <div class="author-image">
                 <img
-                  class="w-10 h-10 bg-no-repeat bg-cover border-2 rounded-full border-slate-400"
+                  class="bg-no-repeat bg-cover border-2 rounded-full w-11 h-11 border-slate-400"
                   :src="img"
                   :alt="`Author image of ${
                     authorsNames[authorsNames?.length - 1]
@@ -63,7 +59,7 @@ function convertDate(date: string) {
                 >
               </div>
               <div v-if="authorsNames?.length === 1">
-                <span class="px-2 text-sm font-semibold">{{
+                <span class="px-2 text-base font-semibold">{{
                   authorsNames[authorsNames?.length - 1]
                 }}</span>
               </div>
@@ -76,8 +72,8 @@ function convertDate(date: string) {
                   >&amp;</span>
                 </span>
               </div>
-              <p class="w-2 h-2 mx-2 bg-gray-700 rounded-full" />
-              <span class="pl-2 text-sm">{{ convertDate(date ?? "") }} </span>
+              <p class="w-2 h-2 mx-2 bg-gray-600 rounded-full" />
+              <span class="pl-2 text-base">{{ convertDate(date ?? "") }} </span>
             </div>
           </div>
         </div>
