@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { speakerInfo } from '@/utils/interfaces'
+import type { speakerInfo } from "@/utils/interfaces";
 
 const props = defineProps({
   speaker: {
     type: Object as () => speakerInfo,
     required: true,
   },
-})
+});
 </script>
 
 <template>
@@ -22,7 +22,7 @@ const props = defineProps({
       loading="eager"
       class="object-cover mx-auto w-[200px] h-[200px] rounded-full shadow border border-gray-300"
       decoding="async"
-    >
+    />
 
     <h1
       class="pt-5 text-2xl font-semibold text-center text-gray-700 dark:text-white"
@@ -41,7 +41,7 @@ const props = defineProps({
         :href="speaker.socials.twitter"
         target="_blank"
         rel="noopener noreferrer"
-        class="mx-2 mt-1 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+        class="mx-2 mt-1 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400"
         aria-label="Twitter"
       >
         <svg
@@ -60,7 +60,7 @@ const props = defineProps({
         href="#"
         target="_blank"
         rel="noopener noreferrer"
-        class="mx-2 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+        class="mx-2 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400"
         aria-label="Facebook"
       >
         <svg
@@ -79,7 +79,7 @@ const props = defineProps({
         :href="speaker.socials.github"
         target="_blank"
         rel="noopener noreferrer"
-        class="mx-2 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+        class="mx-2 text-gray-600 transition-colors duration-300 w-7 h-7 fill dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400"
         aria-label="Github"
       >
         <svg
