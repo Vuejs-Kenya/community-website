@@ -1,77 +1,77 @@
 <script setup lang="ts">
 import Twitter from '@/components/icons/twitter.vue'
 import Meetup from '@/components/icons/meetup.vue'
-import Yt from '@/components/icons/Yt.vue'
+import YouTube from '@/components/icons/Yt.vue'
 import Telegram from '@/components/icons/telegram.vue'
-import Github from '@/components/icons/github.vue'
-import Linkedin from '@/components/icons/linkedin.vue'
+import GitHub from '@/components/icons/github.vue'
+import LinkedIn from '@/components/icons/linkedin.vue'
 import Whatsapp from '@/components/icons/whatsapp.vue'
 import Mail from '@/components/icons/mail.vue'
 import Slack from '@/components/icons/slack.vue'
-import Fb from '@/components/icons/fb.vue'
+import Facebook from '@/components/icons/fb.vue'
 import Signal from '@/components/icons/signal.vue'
 </script>
 
 <template>
   <div class="pb-20 pt-5 sm:-mt-10">
     <div class="joinuswrapper pt-16">
-      <h3 class="text-4xl text-center pb-6">
+      <h3 class="py-8 text-4xl font-semibold text-center">
         Join Us
       </h3>
       <div class="social-links lg:w-1/3 sm:w-1/2 my-0 mx-auto flex flex-wrap">
-        <nuxt-link to="" class="p-2">
+        <a href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Twitter />
+            <Twitter :fill-class="`rgb(74 222 128)`" />
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Meetup />
+            <Meetup :fill-class="`rgb(74 222 128)`" />
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Yt />
+            <YouTube :fill-class="`rgb(74 222 128)`" />
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank" class="p-3">
           <div class="w-28 h-28">
-            <Telegram />
+            <Telegram  :fill-class="`rgb(74 222 128)`"/>
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank"  class="p-2">
           <div class="w-28 h-28">
-            <Github />
+            <GitHub :fill-class="`rgb(74 222 128)`" />
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Linkedin />
+            <LinkedIn  :fill-class="`rgb(74 222 128)`" />
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Whatsapp />
+            <Whatsapp :fill-class="`rgb(74 222 128)`" />
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Mail />
+            <Mail :fill-class="`rgb(74 222 128)`"/>
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Slack />
+            <Slack :fill-class="`rgb(74 222 128)`" />
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <a href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Fb />
+            <Facebook :fill-class="`rgb(74 222 128)`" />
           </div>
-        </nuxt-link>
-        <nuxt-link to="" class="p-2">
+        </a>
+        <nuxt-link href="" target="_blank" class="p-2">
           <div class="w-28 h-28">
-            <Signal />
+            <Signal :fill-class="`rgb(74 222 128)`"/>
           </div>
         </nuxt-link>
       </div>

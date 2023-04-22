@@ -3,7 +3,7 @@
 <template>
   <div class="py-4">
     <div class="w-4/5 mx-auto lg:w-3/5">
-      <h1 class="pt-4 text-4xl font-semibold">
+      <h1 class="py-4 text-4xl font-semibold">
         We are an awesome community
       </h1>
       <div class="text-xl">
@@ -26,7 +26,7 @@
           href="https://t.me/+UrkVB6D63bnDom4l"
           target="_blank"
           rel="noopener noreferrer"
-          class="py-2.5 px-5 bg-green-400 hover:bg-green-500 text-black rounded"
+          class="py-3 px-5 bg-green-400 hover:bg-green-500 text-black rounded"
         >
           Join our Telegram Channel
         </a>

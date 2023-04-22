@@ -23,7 +23,7 @@
             href="https://www.meetup.com/vue-js-kenya/"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-6 py-2.5 text-xl bg-white rounded-lg"
+            class="px-6 py-3  bg-white rounded-lg"
           >
             Join Us
           </a>
@@ -31,7 +31,7 @@
             href="https://www.meetup.com/vue-js-kenya/"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-6 py-2.5 text-xl bg-green-500 rounded-lg"
+            class="px-6 py-3  bg-green-400 rounded-lg hover:bg-green-500"
           >
             Upcoming Events
           </a>
