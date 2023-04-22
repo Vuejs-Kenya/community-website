@@ -15,68 +15,70 @@ import Signal from '@/components/icons/signal.vue'
 <template>
   <div class="pb-20 pt-5 sm:-mt-10">
     <div class="joinuswrapper pt-16">
-      <h3 class="py-8 text-4xl font-semibold text-center">
-        Join Us
+      <h3 class="py-14 text-4xl font-semibold text-center">
+        Join the Community
       </h3>
-      <div class="social-links lg:w-1/3 sm:w-1/2 my-0 mx-auto flex flex-wrap">
-        <a href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <Twitter :fill-class="`rgb(74 222 128)`" />
-          </div>
+      <div class="lg:w-1/3 sm:w-1/2 mx-auto flex gap-x-2 gap-y-4 flex-wrap items-center justify-center">
+        <a href="https://www.twitter.com/kenyavue" target="_blank" class="w-28 h-20">
+
+          <Twitter fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <Meetup :fill-class="`rgb(74 222 128)`" />
-          </div>
+        <a class="w-28 h-20" href="https://www.meetup.com/vue-js-kenya/" target="_blank">
+
+          <Meetup fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <YouTube :fill-class="`rgb(74 222 128)`" />
-          </div>
+        <a class="w-28 h-20" href="https://www.youtube.com/@vuejskenya6612" target="_blank">
+
+          <YouTube fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank" class="p-3">
-          <div class="w-28 h-28">
-            <Telegram  :fill-class="`rgb(74 222 128)`"/>
-          </div>
+        <a class="w-28 h-20" href="" target="_blank">
+
+          <Telegram fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank"  class="p-2">
-          <div class="w-28 h-28">
-            <GitHub :fill-class="`rgb(74 222 128)`" />
-          </div>
+        <a class="w-28 h-20" href="https://github.com/Vuejs-Kenya" target="_blank">
+
+          <GitHub fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <LinkedIn  :fill-class="`rgb(74 222 128)`" />
-          </div>
+        <a class="w-28 h-20" href="" target="_blank">
+
+          <LinkedIn fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <Whatsapp :fill-class="`rgb(74 222 128)`" />
-          </div>
+        <a class="w-28 h-20" href="" target="_blank">
+
+          <Whatsapp fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <Mail :fill-class="`rgb(74 222 128)`"/>
-          </div>
+        <a class="w-28 h-20" href="" target="_blank">
+
+          <Slack fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <Slack :fill-class="`rgb(74 222 128)`" />
-          </div>
+        <a class="w-28 h-20" href="mailto:vuejskenya@gmail.com" target="_blank">
+
+          <Mail fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <a href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <Facebook :fill-class="`rgb(74 222 128)`" />
-          </div>
+
+        <a class="w-28 h-20" href="" target="_blank">
+
+          <Facebook fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
         </a>
-        <nuxt-link href="" target="_blank" class="p-2">
-          <div class="w-28 h-28">
-            <Signal :fill-class="`rgb(74 222 128)`"/>
-          </div>
-        </nuxt-link>
+        <a ref="" class="w-28 h-20" target="_blank">
+
+          <Signal fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
+
+        </a>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

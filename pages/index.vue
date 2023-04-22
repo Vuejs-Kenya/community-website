@@ -37,6 +37,7 @@
     <Landing />
     <Community />
     <PreviousSpeakers />
+    <Sponsor />
     <Newsletter />
     <Joinus />
   </main>

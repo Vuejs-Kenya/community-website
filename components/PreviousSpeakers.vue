@@ -7,13 +7,13 @@ import { speakers } from '@/utils/speakers'
     <p class="py-4 text-4xl font-semibold text-center">
       Previous Speakers
     </p>
-    <div class="flex flex-wrap justify-center w-4/5 py-10 mx-auto gap-x-8">
+    <div class="flex flex-wrap justify-center w-4/5 py-20 mx-auto gap-x-8">
       <div v-for="(speaker, index) in speakers" :key="index">
         <Speaker :speaker="speaker" />
       </div>
     </div>
 
-    <div class="flex justify-center gap-x-4">
+    <div class="flex w-3/5 mx-auto gap-x-10 items-center">
       <a
         href="mailto:vuejskenya@gmail.com?subject=Speaker%20Request"
         class="px-6 py-3 text-base bg-green-400 rounded-lg hover:bg-green-500"

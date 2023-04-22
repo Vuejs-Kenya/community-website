@@ -2,21 +2,35 @@
 defineProps({
   height: {
     type: Number,
-    default: 127,
+    default: 60,
   },
   width: {
     type: Number,
-    default: 127,
+    default: 60,
   },
   fillClass: {
     type: String,
-    required: false,
+    required: true,
+  },
+  hover: {
+    type: String,
+    required: true,
   },
 })
+
+const isHovered = ref<boolean>(false)
+
+function onMouseOver() {
+  isHovered.value = true
+}
+
+function onMouseOut() {
+  isHovered.value = false
+}
 </script>
 
 <template>
-  <div>
+  <div @mouseout="onMouseOut" @mouseover="onMouseOver">
     <svg
       :width="width"
       :height="height"
@@ -29,8 +43,8 @@ defineProps({
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
-          d="M76.1916 23.7321H96.0247V0H76.1916C60.8821 0 48.426 12.4197 48.426 27.6844V39.5504H32.5566V63.285H48.4213V126.57H72.2253V63.285H92.0586L96.0247 39.5506H72.2253V27.6844C72.2253 25.54 74.0409 23.7299 76.1914 23.7299V23.7323L76.1916 23.7321Z"   
-          :fill="fillClass"
+          d="M76.1916 23.7321H96.0247V0H76.1916C60.8821 0 48.426 12.4197 48.426 27.6844V39.5504H32.5566V63.285H48.4213V126.57H72.2253V63.285H92.0586L96.0247 39.5506H72.2253V27.6844C72.2253 25.54 74.0409 23.7299 76.1914 23.7299V23.7323L76.1916 23.7321Z"
+          :fill=" isHovered ? hover : fillClass"
         />
       </g>
       <defs>

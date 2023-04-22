@@ -3,7 +3,7 @@
 <template>
   <div class="py-4">
     <div class="w-4/5 mx-auto lg:w-3/5">
-      <h1 class="py-4 text-4xl font-semibold">
+      <h1 class="py-8 text-4xl font-semibold">
         We are an awesome community
       </h1>
       <div class="text-xl">
@@ -21,7 +21,7 @@
           us today and take your Vue.js skills to the next level!
         </p>
       </div>
-      <div class="pt-8">
+      <div class="py-8">
         <a
           href="https://t.me/+UrkVB6D63bnDom4l"
           target="_blank"

@@ -2,23 +2,38 @@
 defineProps({
   height: {
     type: Number,
-    default: 127,
+    default: 60,
   },
   width: {
     type: Number,
-    default: 127,
+    default: 60,
   },
   fillClass: {
     type: String,
-    required: false,
+    required: true,
+  },
+  hover: {
+    type: String,
+    required: true,
   },
 })
+
+const isHovered = ref<boolean>(false)
+
+function onMouseOver() {
+  isHovered.value = true
+}
+
+function onMouseOut() {
+  isHovered.value = false
+}
 </script>
+
 <template>
-  <div>
+  <div @mouseout="onMouseOut" @mouseover="onMouseOver">
     <svg
-      width="128"
-      height="127"
+      :width="width"
+      :height="height"
       viewBox="0 0 128 127"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +44,7 @@ defineProps({
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M125.738 37.9786C125.738 37.9786 124.499 29.2542 120.685 25.4234C115.852 20.385 110.441 20.3523 107.967 20.0604C90.2163 18.771 63.5565 18.771 63.5565 18.771H63.5097C63.5097 18.771 36.8616 18.771 19.1016 20.0604C16.6183 20.3616 11.2138 20.3828 6.38312 25.4234C2.56696 29.2542 1.35349 37.9786 1.35349 37.9786C1.35349 37.9786 0.0908203 48.2165 0.0908203 58.4756V68.069C0.0908203 78.307 1.35349 88.566 1.35349 88.566C1.35349 88.566 2.59275 97.2903 6.38312 101.128C11.2138 106.167 17.5624 106.003 20.3972 106.54C30.5598 107.507 63.5658 107.799 63.5658 107.799C63.5658 107.799 90.249 107.752 108 106.487C110.483 106.194 115.885 106.164 120.718 101.123C124.534 97.2926 125.771 88.5589 125.771 88.5589C125.771 88.5589 127.034 78.3212 127.034 68.0619V58.4687C127.008 48.2306 125.745 37.9717 125.745 37.9717L125.738 37.9786ZM50.407 79.7085V44.136L84.6993 61.9818L50.407 79.7085Z"
-          :fill="fillClass"
+          :fill=" isHovered ? hover : fillClass"
         />
       </g>
       <defs>
