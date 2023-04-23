@@ -3,7 +3,7 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
-  <footer class="bg-gray-100 w-full">
+  <footer class="bg-[#E9FEF5] w-full">
     <div class="w-3/5 mx-auto border-b-2 border-[rgba(233, 254, 245, 0.5)] py-6">
       <h2 class="text-2xl py-3 font-semibold">
         Vue Kenya
@@ -23,6 +23,22 @@ const year = new Date().getFullYear()
           <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Code of Conduct</a>
           <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Open Source</a>
           <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Report A Bug</a>
+        </div>
+      </div>
+      <div class="flex justify-between border-t-2 border-[rgba(233, 254, 245, 0.5)] py-6 mt-5">
+        <div class="w-[300px] flex flex-col gap-y-3">
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Email us</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Meetup</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Facebook</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">LinkedIn</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Twitter</a>
+        </div>
+        <div class="w-[300px] flex flex-col gap-y-3">
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Telegram</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Slack</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Github</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Whatsapp</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Youtube</a>
         </div>
       </div>
     </div>

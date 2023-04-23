@@ -22,7 +22,7 @@ export const metrics = ref<sponsor[]>([
   },
   {
     metric: 700,
-    item: 'LinkedIn Connects',
+    item: 'LinkedIn Followers',
   },
   {
     metric: 3000,

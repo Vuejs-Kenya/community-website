@@ -6,11 +6,11 @@ import ArrowRight from './icons/ArrowRight.vue'
 <template>
   <div class="w-3/5 mx-auto">
     <div class="">
-      <h3 class="py-8 text-4xl font-semibold">
+      <h3 class="py-10 text-4xl font-semibold">
         Stay Updated
       </h3>
       <div class="text-base flex justify-between">
-        <p>New Articles every week. Sharpen your skills. Deepen your understanding of Vue</p>
+        <p>New Articles every week. Sharpen your skills. <br> Deepen your understanding of Vue</p>
         <div class="hidden lg:inline">
           <a href="http://" target="_blank" rel="noopener noreferrer" class="px-6 py-3 gap-x-3 bg-green-400 hover:bg-green-500 rounded-lg">Read More <ArrowRight class="inline" /></a>
         </div>

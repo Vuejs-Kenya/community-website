@@ -12,7 +12,7 @@ import { metrics } from '~~/utils/metrics'
         <h4 class="text-2xl font-semibold">
           {{ `${metric.metric.toLocaleString()}+` }}
         </h4>
-        <p class="pt-3 text-xl">
+        <p class="pt-3 text-xl text-gray-400">
           {{ metric.item }}
         </p>
       </div>

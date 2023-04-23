@@ -21,7 +21,7 @@
           us today and take your Vue.js skills to the next level!
         </p>
       </div>
-      <div class="py-8">
+      <div class="py-10">
         <a
           href="https://t.me/+UrkVB6D63bnDom4l"
           target="_blank"
