@@ -5,16 +5,13 @@ import SunIcon from '@/components/icons/SunIcon.vue'
 const router = useRoute()
 const colorMode = useColorMode()
 
-function setMode(){
-  console.log('this fired')
-  if(colorMode.preference === 'dark'){
-    colorMode.preference = "light"
+function setMode() {
+  if (colorMode.preference === 'dark') {
+    colorMode.preference = 'light'
     return
   }
-  colorMode.preference = "dark"
-
+  colorMode.preference = 'dark'
 }
-
 </script>
 
 <template>
@@ -69,7 +66,7 @@ function setMode(){
           Contact
         </nuxt-link>
         <button class="w-10 h-10 rounded-full border border-gray-300 items-center flex justify-center my-auto" @click="setMode">
-          <MoonIcon v-if="$colorMode.value === 'light'"/>
+          <MoonIcon v-if="$colorMode.value === 'light'" />
           <SunIcon v-else />
         </button>
       </div>

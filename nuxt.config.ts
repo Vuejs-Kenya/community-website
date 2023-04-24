@@ -1,5 +1,5 @@
 export default {
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss','@nuxtjs/color-mode'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
   content: {
     highlight: {
       theme: {
@@ -15,7 +15,7 @@ export default {
     },
   },
   colorMode: {
-    classSuffix: ''
+    classSuffix: '',
   },
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   tailwindcss: {
