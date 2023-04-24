@@ -4,8 +4,9 @@ import ArrowRight from './icons/ArrowRight.vue'
 </script>
 
 <template>
-  <div class="w-3/5 mx-auto">
-    <div class="">
+  <div class="dark:bg-[#010D08] dark:text-[#E9FEF5] ">
+    <div class="w-3/5 mx-auto">
+    <div>
       <h3 class="py-10 text-4xl font-semibold">
         Stay Updated
       </h3>
@@ -38,7 +39,7 @@ import ArrowRight from './icons/ArrowRight.vue'
   </div>
   <div class="lg:w-3/5 mx-auto w-full">
     <!-- TODO: setup the newsletter  for now we dont have an newsletter setup -->
-    <div class="bg-green-400 mt-10">
+    <div class="bg-green-400 my-10">
       <div>
         <h2 class="text-2xl font-bold pt-8 text-center">
           Be The First To Know
@@ -60,4 +61,6 @@ import ArrowRight from './icons/ArrowRight.vue'
       </div>
     </div>
   </div>
+  </div>
+
 </template>

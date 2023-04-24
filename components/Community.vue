@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="py-4">
+  <div class="py-4 dark:bg-[#010D08] dark:text-[#E9FEF5]">
     <div class="w-4/5 mx-auto lg:w-3/5">
       <h1 class="py-8 text-4xl font-semibold">
         We are an awesome community

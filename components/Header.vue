@@ -1,11 +1,26 @@
 <script setup lang="ts">
+import MoonIcon from '@/components/icons/MoonIcon.vue'
+import SunIcon from '@/components/icons/SunIcon.vue'
+
 const router = useRoute()
+const colorMode = useColorMode()
+
+function setMode(){
+  console.log('this fired')
+  if(colorMode.preference === 'dark'){
+    colorMode.preference = "light"
+    return
+  }
+  colorMode.preference = "dark"
+
+}
+
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 bg-white">
+  <header class="sticky top-0 z-50 bg-white dark:bg-[#010D08]">
     <div
-      class="flex justify-around w-full h-16 mx-auto text-lg font-normal text-black bg-white lg:container"
+      class="flex justify-around w-full h-16 mx-auto text-lg font-normal text-black dark:text-[#E9FEF5] lg:container"
     >
       <div>
         <nuxt-link to="/" class="flex gap-x-2">
@@ -53,6 +68,10 @@ const router = useRoute()
         >
           Contact
         </nuxt-link>
+        <button class="w-10 h-10 rounded-full border border-gray-300 items-center flex justify-center my-auto" @click="setMode">
+          <MoonIcon v-if="$colorMode.value === 'light'"/>
+          <SunIcon v-else />
+        </button>
       </div>
     </div>
   </header>

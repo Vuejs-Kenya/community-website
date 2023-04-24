@@ -13,7 +13,7 @@ import Signal from '@/components/icons/signal.vue'
 </script>
 
 <template>
-  <div class="pb-20 pt-5 sm:-mt-10">
+  <div class="pb-20 pt-5 sm:-mt-10 dark:bg-[#010D08] dark:text-[#E9FEF5]">
     <div class="joinuswrapper pt-16">
       <h3 class="py-14 text-4xl font-semibold text-center">
         Join the Community

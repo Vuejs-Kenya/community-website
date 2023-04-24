@@ -3,7 +3,8 @@ import { metrics } from '~~/utils/metrics'
 </script>
 
 <template>
-  <div class="w-3/5 mx-auto py-10">
+  <div class="dark:bg-[#010D08] dark:text-[#E9FEF5] py-10">
+    <div class="w-3/5 mx-auto">
     <h1 class="text-4xl font-semibold">
       Sponsor Vue Kenya
     </h1>
@@ -19,4 +20,7 @@ import { metrics } from '~~/utils/metrics'
     </div>
     <a href="http://" target="_blank" rel="noopener noreferrer" class="py-3 px-6 bg-green-400 hover:bg-green-500 rounded-lg">Sponsor us</a>
   </div>
+
+  </div>
+
 </template>

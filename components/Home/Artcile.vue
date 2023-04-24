@@ -37,7 +37,7 @@ function convertDate(date: string) {
         >
 
         <div>
-          <div class="py-6 bg-white">
+          <div class="py-6 bg-white dark:bg-[#010D08] dark:text-[#E9FEF5]">
             <h4 class="py-2 text-xl font-bold leading-tight truncate">
               {{ title }}
             </h4>

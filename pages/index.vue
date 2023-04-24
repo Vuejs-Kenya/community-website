@@ -1,4 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
   <Head>
@@ -36,7 +37,7 @@
   <main>
     <Landing />
     <Community />
-    <PreviousSpeakers />  
+    <PreviousSpeakers />
     <Sponsor />
     <Newsletter />
     <Joinus />

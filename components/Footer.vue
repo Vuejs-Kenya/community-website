@@ -3,10 +3,10 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
-  <footer class="bg-[#E9FEF5] w-full">
+  <footer class="bg-[#E9FEF5] w-full dark:bg-[#022817] dark:text-[#E9FEF5]">
     <div class="w-3/5 mx-auto border-b-2 border-[rgba(233, 254, 245, 0.5)] py-6">
       <h2 class="text-2xl py-3 font-semibold">
-        Vue Kenya
+        Vuejs Kenya
       </h2>
       <p>Where Vue Developers Connect, Collaborate & Learn Together</p>
       <div class="flex justify-between pt-8">
@@ -36,7 +36,7 @@ const year = new Date().getFullYear()
         <div class="w-[300px] flex flex-col gap-y-3">
           <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Telegram</a>
           <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Slack</a>
-          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Github</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">GitHub</a>
           <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Whatsapp</a>
           <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Youtube</a>
         </div>

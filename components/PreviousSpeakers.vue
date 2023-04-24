@@ -3,7 +3,7 @@ import { speakers } from '@/utils/speakers'
 </script>
 
 <template>
-  <div class="py-6">
+  <div class="py-6 dark:bg-[#010D08] dark:text-[#E9FEF5]">
     <p class="py-4 text-4xl font-semibold text-center">
       Previous Speakers
     </p>
@@ -13,7 +13,7 @@ import { speakers } from '@/utils/speakers'
       </div>
     </div>
 
-    <div class="flex w-3/5 mx-auto gap-x-10 items-center">
+    <div class="flex w-3/5 mx-auto gap-x-10 items-center justify-center pb-8">
       <a
         href="mailto:vuejskenya@gmail.com?subject=Speaker%20Request"
         class="px-6 py-3 text-base bg-green-400 rounded-lg hover:bg-green-500"
