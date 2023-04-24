@@ -7,10 +7,10 @@ import ArrowRight from './icons/ArrowRight.vue'
   <div class="dark:bg-[#010D08] dark:text-[#E9FEF5] ">
     <div class="w-3/5 mx-auto">
       <div>
-        <h3 class="py-10 text-4xl font-semibold">
+        <h3 class="py-10 text-4xl font-semibold lg:text-left text-center">
           Stay Updated
         </h3>
-        <div class="text-base flex justify-between">
+        <div class="text-base flex lg:justify-between justify-center">
           <p>New Articles every week. Sharpen your skills. <br> Deepen your understanding of Vue</p>
           <div class="hidden lg:inline">
             <a href="http://" target="_blank" rel="noopener noreferrer" class="px-6 py-3 gap-x-3 bg-green-400 hover:bg-green-500 rounded-lg">Read More <ArrowRight class="inline" /></a>
@@ -19,7 +19,7 @@ import ArrowRight from './icons/ArrowRight.vue'
       </div>
       <ContentList v-slot="{ list }" path="/blogs">
         <div
-          class=" flex flex-wrap  gap-x-10  pt-20"
+          class=" flex flex-wrap lg:justify-between justify-center gap-y-5  pt-20"
         >
           <Article
             v-for="article in list"
@@ -37,9 +37,9 @@ import ArrowRight from './icons/ArrowRight.vue'
         </div>
       </ContentList>
     </div>
-    <div class="lg:w-3/5 mx-auto w-full">
+    <div class="lg:w-3/5 mx-auto w-full pt-10">
       <!-- TODO: setup the newsletter  for now we dont have an newsletter setup -->
-      <div class="bg-green-400 my-10">
+      <div class="bg-green-400 py-8 dark:text-black">
         <div>
           <h2 class="text-2xl font-bold pt-8 text-center">
             Be The First To Know

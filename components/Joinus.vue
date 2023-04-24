@@ -14,8 +14,8 @@ import Signal from '@/components/icons/signal.vue'
 
 <template>
   <div class="pb-20 pt-5 sm:-mt-10 dark:bg-[#010D08] dark:text-[#E9FEF5]">
-    <div class="joinuswrapper pt-16">
-      <h3 class="py-14 text-4xl font-semibold text-center">
+    <div class="joinuswrapper">
+      <h3 class="py-16 text-4xl font-semibold text-center">
         Join the Community
       </h3>
       <div class="lg:w-1/3 sm:w-1/2 mx-auto flex gap-x-2 gap-y-4 flex-wrap items-center justify-center">
