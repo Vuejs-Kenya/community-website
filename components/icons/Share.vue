@@ -2,11 +2,11 @@
 defineProps({
   height: {
     type: Number,
-    default: 127,
+    default: 60,
   },
   width: {
     type: Number,
-    default: 127,
+    default: 60,
   },
   strokeClass: {
     type: String,
@@ -17,7 +17,8 @@ defineProps({
 
 <template>
   <svg
-    :width="width" :height="height"
+    :width="width"
+    :height="height"
     viewBox="0 0 24 24"
     fill="none"
     :class="strokeClass"

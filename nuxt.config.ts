@@ -1,5 +1,5 @@
 export default {
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
   content: {
     highlight: {
       theme: {
@@ -13,6 +13,9 @@ export default {
         searchDepth: 5,
       },
     },
+  },
+  colorMode: {
+    classSuffix: '',
   },
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   tailwindcss: {

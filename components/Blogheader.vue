@@ -1,16 +1,16 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="landing h-64 w-full bg-center bg-no-repeat bg-cover object-cover">
-    <p class="text-5xl text-center py-20 tracking-wider">
-      Vuejs Kenya Blog
-    </p>
+  <div
+    class="flex items-center justify-center object-cover w-full bg-center bg-no-repeat bg-cover h-52 lg:h-96 bg-[url('https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg?auto=compress&cs=tinysrgb&w=1600')]"
+  >
+    <div>
+      <p class="lg:text-6xl text-4xl font-semibold tracking-wider text-center">
+        Vuejs Kenya Blog
+      </p>
+      <p class="pt-6 text-xl text-center">
+        Articles shared by members of the Community
+      </p>
+    </div>
   </div>
 </template>
-
-<style scoped>
-.landing {
-  background-image: url("../assets/img/vuejskenyahero.jpg");
-  box-shadow: inset 0 0 0 1000px rgba(9, 184, 104, 0.82);
-}
-</style>

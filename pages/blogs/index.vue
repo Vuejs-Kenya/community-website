@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Community - Blog',
+  title: 'Blog',
   meta: [
     {
       name: 'description',
@@ -15,16 +15,20 @@ useHead({
   <section>
     <Blogheader />
     <ContentList v-slot="{ list }" path="/blogs">
-      <div class="w-4/5 my-4 mx-auto flex flex-wrap min-h-[830px]">
+      <div
+        class="w-3/5 mx-auto flex flex-wrap min-h-[830px] gap-x-6 gap-y-8 pt-20 pb-10"
+      >
         <Article
           v-for="article in list"
           :key="article._path"
+          :article-info="article"
           :path="article._path"
           :img="article.imgurl"
           :title="article.subtitle"
           :tags="article.tags"
           :date="article.createdAt"
-          :author="article.author"
+          :authors-names="article.authorsNames"
+          :authors-images="article.authorImages"
         />
       </div>
     </ContentList>

@@ -20,7 +20,9 @@ body {
 a {
   text-decoration: none;
 }
-
+p{
+  
+}
 h1,
 h2,
 h3,
@@ -30,6 +32,21 @@ h6 {
   @apply font-header;
 }
 
+.ph2 {
+  @apply py-6 text-3xl font-semibold leading-tight text-center text-gray-900;
+}
+.ph1 {
+  @apply mt-4 text-lg leading-7 text-gray-600 tracking-wide;
+}
+.bh {
+  @apply font-semibold text-[18px] tracking-wide text-xl;
+}
+.tag {
+  @apply inline-block px-3 py-1 mr-2 text-xs leading-relaxed tracking-wide uppercase bg-gray-200 rounded-md;
+}
+ul li {
+  @apply mt-4;
+}
 .icon {
   @apply inline-flex w-6 h-6;
 }
@@ -53,10 +70,6 @@ h6 {
 
 .img-cont img {
   @apply h-full w-full object-cover;
-}
-
-.article-tags {
-  @apply flex gap-2 py-2;
 }
 
 .article-tags .tag {

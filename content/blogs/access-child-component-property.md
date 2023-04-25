@@ -11,11 +11,14 @@ excerpt: Useful tip to access methods and functions from child components
 
 imgurl: https://images.pexels.com/photos/277559/pexels-photo-277559.jpeg?auto=compress&cs=tinysrgb&w=800
 
-tags: ["VUEJS", "TIP"]
+tags: ["VUEJS-TIP"]
 
 attribution: Photo by Pixabay on Pexelry
 
-author: John Philip
+authorsNames: ["John Philip"]
+
+authorImages:
+  ["https://images.pexels.com/photos/1722198/pexels-photo-1722198.jpeg"]
 
 createdAt: 12/10/2022
 ---
