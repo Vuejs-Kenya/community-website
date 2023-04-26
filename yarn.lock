@@ -879,7 +879,7 @@
     unimport "^2.2.4"
     untyped "^1.2.2"
 
-"@nuxt/kit@3.3.2", "@nuxt/kit@^3.2.0", "@nuxt/kit@^3.3.1":
+"@nuxt/kit@3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.3.2.tgz#e3cd19c0f5cd0f124fff6f659a5f25002f808946"
   integrity sha512-mHucMYuN/nVJp0p+L6ezzEls8Y1PerAXCJi01lS3Z5ozz+l2OusEfes8EBxWcy3x0C5465ignXCujQs3/LAvnQ==
@@ -903,7 +903,7 @@
     unimport "^3.0.4"
     untyped "^1.2.2"
 
-"@nuxt/kit@^3.0.0":
+"@nuxt/kit@^3.0.0", "@nuxt/kit@^3.2.0", "@nuxt/kit@^3.3.1":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.4.2.tgz#a7ae05f154c43560f18dd56c49df1b23a2c2553b"
   integrity sha512-bFUpkyG2ZF6RYqiW+tXnWssccHQQqMF4kZJJLP/0eKXf+Fkt/Is0R7IY768jy8ylnyqeMBbmpg4Zv5gSZjfZQw==
@@ -1076,10 +1076,10 @@
     lodash.template "^4.5.0"
     pathe "^1.0.0"
 
-"@nuxtjs/tailwindcss@^6.6.4":
-  version "6.6.5"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-6.6.5.tgz#a13d44309fbeb51b7d830cec77298b2edd36615d"
-  integrity sha512-MqiH8x1aUaGbqgGlDO63pLPQAwEvFcSAXBd1R0ZWXoQvOKuAdsy1L9a+Q6eH9Zmdn4WpVZ7Y81iFJRQu3tIT1w==
+"@nuxtjs/tailwindcss@^6.6.6":
+  version "6.6.6"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-6.6.6.tgz#4d5d17719c85647ed410dc0936a12ece87882194"
+  integrity sha512-cUiwO28TQYww+2H8x1BtxGjYpzzAdiHi2S4z6seGDM0g0sv5P1Zn8VO6N9crSxNkAZjKVhof9CD+D8ykMloZbA==
   dependencies:
     "@nuxt/kit" "^3.3.1"
     "@nuxt/postcss8" "^1.1.3"
