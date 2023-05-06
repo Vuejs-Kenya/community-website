@@ -3,7 +3,7 @@
 <template>
   <div>
     <div
-      class="landing h-[50vh] w-full bg-center bg-no-repeat bg-cover object-cover flex justify-center items-center"
+      class="landing h-[60vh] w-full bg-center bg-no-repeat bg-cover object-cover flex justify-center items-center"
     >
       <div>
         <p
