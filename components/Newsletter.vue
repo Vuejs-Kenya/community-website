@@ -19,20 +19,12 @@ import ArrowRight from './icons/ArrowRight.vue'
       </div>
       <ContentList v-slot="{ list }" path="/blogs">
         <div
-          class=" flex flex-wrap lg:justify-between justify-center gap-y-5  pt-20"
+          class=" flex flex-wrap gap-x-8  gap-y-5  pt-20"
         >
           <Article
-            v-for="article in list"
-            :key="article._path"
+            v-for="(article, index) in list"
+            :key="index"
             :article-info="article"
-            :path="article._path"
-            :img="article.imgurl"
-            :title="article.subtitle"
-            :tags="article.tags"
-            :date="article.createdAt"
-            :description="article.description"
-            :authors-names="article.authorsNames"
-            :authors-images="article.authorImages"
           />
         </div>
       </ContentList>

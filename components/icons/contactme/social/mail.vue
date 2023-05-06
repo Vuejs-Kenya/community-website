@@ -1,0 +1,48 @@
+<script setup lang="ts">
+defineProps({
+  height: {
+    type: Number,
+    default: 60,
+  },
+  width: {
+    type: Number,
+    default: 60,
+  },
+  fillClass: {
+    type: String,
+    required: true,
+  },
+  hover: {
+    type: String,
+    required: true,
+  },
+})
+
+const isHovered = ref<boolean>(false)
+
+function onMouseOver() {
+  isHovered.value = true
+}
+
+function onMouseOut() {
+  isHovered.value = false
+}
+</script>
+
+<template>
+  <div @mouseout="onMouseOut" @mouseover="onMouseOver">
+    <svg
+      :width="width"
+      :height="height"
+      viewBox="0 0 128 96"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-full"
+    >
+      <path
+        d="M124.808 32.1671C125.775 31.4008 127.213 32.1177 127.213 33.329V83.8829C127.213 90.4338 121.883 95.7488 115.313 95.7488H12.1732C5.60299 95.7488 0.272461 90.4338 0.272461 83.8829V33.3537C0.272461 32.1177 1.68567 31.4255 2.6774 32.1919C8.23106 36.4933 15.5946 41.9565 40.8836 60.2746C46.115 64.0816 54.9413 72.0911 63.7429 72.0416C72.594 72.1158 81.5939 63.9332 86.627 60.2746C111.916 41.9565 119.255 36.4685 124.808 32.1671ZM63.7429 64.1063C69.4949 64.2052 77.7758 56.8878 81.9411 53.8719C114.842 30.0659 117.346 27.9893 124.932 22.0564C126.37 20.9439 127.213 19.2135 127.213 17.3842V12.6872C127.213 6.13624 121.883 0.821289 115.313 0.821289H12.1732C5.60299 0.821289 0.272461 6.13624 0.272461 12.6872V17.3842C0.272461 19.2135 1.11543 20.9192 2.55343 22.0564C10.1401 27.9646 12.6442 30.0659 45.5447 53.8719C49.71 56.8878 57.9909 64.2052 63.7429 64.1063Z"
+        :fill=" isHovered ? hover : fillClass"
+      />
+    </svg>
+  </div>
+</template>

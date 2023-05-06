@@ -15,10 +15,10 @@ tags: ["VUEJS-TIP"]
 
 attribution: Photo by Pixabay on Pexelry
 
-authorsNames: ["John Philip"]
+authorNames: ["John Philip"]
 
 authorImages:
-  ["https://images.pexels.com/photos/1722198/pexels-photo-1722198.jpeg"]
+  ["https://avatars.githubusercontent.com/u/60175531?v=4"]
 
 createdAt: 12/10/2022
 ---

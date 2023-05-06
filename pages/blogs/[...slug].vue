@@ -108,7 +108,7 @@ const copyToClipboard = async () => {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          class="w-5 h-5 stroke-blue-600"
+          class="w-5 h-5 stroke-blue-600 pt-30"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -119,42 +119,42 @@ const copyToClipboard = async () => {
       </template>
     </Toast>
     <header v-if="data.article" class="article-header">
-      <div class="flex items-center justify-between mb-5 gap-x-7">
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
+      <div class="flex items-center md:flex-row flex-col justify-between py-6">
+        <div class="flex items-center gap-x-4 pb-8 md:pb-0">
           <p
-            v-for="(author, index) in data.article.authorsNames"
+            v-for="(author, index) in data.article.authorNames"
             :key="index"
             class="text-lg font-bold"
           >
             {{ author }}
           </p>
-          <p class="w-2 h-2 bg-gray-600 rounded-full" />
+          <p class="w-2 h-2 bg-gray-400 rounded-full" />
           <span>
-            {{ readingTime(data.article) }}
+            <span class="font-bold">{{ readingTime(data.article) }}</span>
             min read
           </span>
         </div>
-        <div class="flex items-center my-5 ml-auto sharing gap-x-3 sm:my-0">
-          <a :href="twitterShareLink" class="w-6 h-6" target="_blank">
-            <Twitter :height="24" :width="24" fill-class="fill-gray-400" />
+        <div class="flex items-center gap-x-7 h-6">
+          <a :href="twitterShareLink" class="text-gray-400 w-6" target="_blank">
+            <Twitter fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
           </a>
-          <a :href="linkedinShareLink" class="w-6 h-6" target="_blank">
-            <Linkedin :height="24" :width="24" fill-class="fill-gray-400" />
+          <a :href="linkedinShareLink" target="_blank" class="text-gray-400 w-6">
+            <Linkedin fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
           </a>
-          <a :href="telegramShareLink" class="w-6 h-6" target="_blank">
-            <Telegram :height="24" :width="24" fill-class="fill-gray-400" />
+          <a :href="telegramShareLink" target="_blank" class="text-gray-400 w-6">
+            <Telegram fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
           </a>
-          <a :href="redditShareLink" class="w-6 h-6" target="_blank">
-            <Reddit class="fill-gray-400" />
+          <a :href="redditShareLink" target="_blank" class="text-gray-400 w-6">
+            <Reddit fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
           </a>
-          <a :href="whatsappShareLink" class="w-6 h-6" target="_blank">
-            <Whatsapp :height="24" :width="24" fill-class="fill-gray-400" />
+          <a :href="whatsappShareLink" target="_blank" class="text-gray-400 w-6">
+            <Whatsapp fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
           </a>
-          <a :href="emailShareLink" class="w-6 h-6" target="_blank">
-            <Mail :height="24" :width="24" fill-class="fill-gray-400" />
+          <a :href="emailShareLink" target="_blank" class="text-gray-400 w-6">
+            <Mail fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
           </a>
-          <a href="#" class="w-6 h-6" @click.prevent="copyToClipboard">
-            <Share :height="24" :width="24" stroke-class="stroke-gray-400" />
+          <a href="#" class="text-gray-400 w-6" @click.prevent="copyToClipboard">
+            <Share fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" class="w-full" />
           </a>
         </div>
       </div>

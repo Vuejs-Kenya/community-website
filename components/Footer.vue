@@ -8,7 +8,9 @@ const year = new Date().getFullYear()
       <h2 class="text-4xl py-3 font-semibold">
         Vuejs Kenya
       </h2>
-      <p class="text-base">Where Vue Developers Connect, Collaborate & Learn Together</p>
+      <p class="text-base">
+        Where Vue Developers Connect, Collaborate & Learn Together
+      </p>
       <div class="flex justify-between pt-8">
         <div class="w-[300px] flex flex-col gap-y-3">
           <a href="/blogs" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Blog</a>

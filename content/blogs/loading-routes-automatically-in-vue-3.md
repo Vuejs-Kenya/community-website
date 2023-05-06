@@ -13,9 +13,9 @@ imgurl: https://images.pexels.com/photos/7664355/pexels-photo-7664355.jpeg?auto=
 
 tags: ["Vue 3", "routing"]
 
-authorsNames: ["John Philip"]
+authorNames: ["John Philip"]
 
-authorsImages: ["https://avatars.githubusercontent.com/u/60175531?v=4"]
+authorImages: ["https://avatars.githubusercontent.com/u/60175531?v=4"]
 
 createdAt: 6/25/2021
 
