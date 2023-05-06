@@ -9,11 +9,11 @@ alt: Useful tip to access methods and functions from child components
 
 excerpt: Useful tip to access methods and functions from child components
 
-imgurl: https://images.pexels.com/photos/277559/pexels-photo-277559.jpeg?auto=compress&cs=tinysrgb&w=800
+imgurl: https://images.unsplash.com/photo-1681828469364-3c65c6292a61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=80
 
 tags: ["VUEJS-TIP"]
 
-attribution: Photo by Pixabay on Pexelry
+attribution: Photo by Rick Rothenberg on Unsplash
 
 authorNames: ["John Philip"]
 

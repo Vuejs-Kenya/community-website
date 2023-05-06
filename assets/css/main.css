@@ -33,16 +33,16 @@ h6 {
 }
 
 .ph2 {
-  @apply py-6 text-3xl font-semibold leading-tight text-center text-gray-900;
+  @apply py-6 text-3xl font-semibold leading-tight text-center text-gray-900 dark:text-[#E9FEF5];
 }
 .ph1 {
-  @apply mt-4 text-lg leading-7 text-gray-600 tracking-wide;
+  @apply mt-4 text-lg leading-7 text-gray-600 tracking-wide dark:text-[#E9FEF5];
 }
 .bh {
   @apply font-semibold text-[18px] tracking-wide text-xl;
 }
 .tag {
-  @apply inline-block px-3 py-1.5 text-xs leading-relaxed tracking-wide uppercase bg-gray-200 rounded;
+  @apply inline-block px-3 py-1.5 text-xs leading-relaxed tracking-wide uppercase bg-gray-200 rounded dark:text-black;
 }
 ul li {
   @apply mt-4;

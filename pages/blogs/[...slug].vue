@@ -34,8 +34,6 @@ useHead({
 // copy to clipboard toast
 const openToast = ref(false)
 
-const setToastOpen = open => (openToast.value = open)
-
 // blog full url
 const blogUrl = computed(() =>
   process.client ? `${window.location.origin}${window.location.pathname}` : '',
@@ -99,7 +97,7 @@ const copyToClipboard = async () => {
     <Toast
       :show="openToast"
       message="Link copied to clipboard."
-      @close="setToastOpen(false)"
+      @close="openToast = false"
     >
       <template #toastIcon>
         <svg

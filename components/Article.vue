@@ -14,7 +14,7 @@ withDefaults(
 <template>
   <article>
     <div
-      class="flex border border-gray-300 rounded-lg overflow-hidden hover:shadow-lg w-[400px]"
+      class="flex border border-gray-300 rounded-lg overflow-hidden hover:shadow-lg w-[400px] dark:border-black"
     >
       <router-link :to="articleInfo._path" class="w-full">
         <img
@@ -34,7 +34,7 @@ withDefaults(
               </ul>
             </div>
 
-            <h4 class="py-2 text-xl font-semibold leading-tight truncate">
+            <h4 class="pt-4 pb-2 text-xl font-semibold leading-tight truncate dark:text-black">
               {{ articleInfo.subtitle }}
             </h4>
             <div class="flex items-center py-3 leading-relaxed gap-x-1 md:gap-x-2">
@@ -48,7 +48,7 @@ withDefaults(
                 }`"
                 loading="eager"
               >
-              <div class="flex font-semibold gap-x-2">
+              <div class="flex font-semibold gap-x-2 dark:text-black">
                 <p v-for="(author, index) in articleInfo.authorNames" :key="index">
                   {{ author }}
                   <span
@@ -58,7 +58,7 @@ withDefaults(
                 </p>
               </div>
               <p class="w-1 h-1 mx-2 bg-gray-400 rounded-full" />
-              <span class="pl-2 text-base">{{ convertDate(articleInfo.createdAt) }} </span>
+              <span class="pl-2 text-base dark:text-black">{{ convertDate(articleInfo.createdAt) }} </span>
             </div>
           </div>
         </div>
