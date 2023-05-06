@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { withDefaults } from 'vue'
+import { convertDate } from '~/utils/helpers'
 import type { Article } from '~/utils/interfaces'
 
 withDefaults(
@@ -8,15 +9,6 @@ withDefaults(
   }>(),
   {},
 )
-
-function convertDate(date: string) {
-  const da = new Date(date)
-  return da.toLocaleString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-}
 </script>
 
 <template>
