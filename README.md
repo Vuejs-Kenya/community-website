@@ -34,12 +34,21 @@ See `content\blogs\Loading-Routes-Automatically-in-Vue-3.md` to get started form
 
 Once correctly formated, and meta tags provided, open a `PR` and ask for a review. Ping any of the maintainers on the conversation section only.
 
-Article currently accepted.
+We are currently accepting articles on the following topics:
 
-- [x] Vuejs and its related ecosystem.
-- [x] Any topic of choice (tips/tricks) related to software engineering.
+- Vue.js and its related ecosystem.
+- Any topic related to software engineering, including tips and tricks.
+
+If you have expertise in either of these areas and would like to share your knowledge with our readers, we encourage you to submit an article for consideration.
+
+Before submitting your article, please make sure it meets our guidelines for content quality and style. We expect articles to be well-written, informative, and engaging for our audience.
+
+We look forward to reading your submissions and sharing your knowledge with our community!
+
 
 Please adhere to this project's `CODE_OF_CONDUCT`.
+
+Check out `content\README.md` to get started formatting your article in Markdown.
 
 ## Contributing
 

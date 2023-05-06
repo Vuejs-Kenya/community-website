@@ -4,7 +4,6 @@
 
 When writing an article using Nuxt Content, it's important to structure your Markdown file properly. Nuxt Content uses a special syntax for metadata, which is used to provide additional information about the content. Here's an example of how to structure your Markdown file:
 
-
 ---
 title: Article Title
 subtitle: Article Subtitle
@@ -18,6 +17,22 @@ authorNames: ["Author Name"]
 authorImages: ["https://example.com/author-image.jpg"]
 createdAt: 2023-05-06
 ---
+
+
+When submitting your article, you need to fill all the fields.
+
+- You can use your image or avatar image.
+- When using images which you dont have cipyright to you need to provide an attribution to the creator of the image. You can source your image from Pexels.com or Unsplash.com.
+- A single article can be written by more than one author. If your piece is a contribution of more than one author, you need to provide details of the contributors in the `authorNames` as an array of string names. (same applied for the authorImages) i.e `['author one','author two']`
+- If you are publishing an article that was published before you need to clearly state that at the beginning of the article. i.e (this article was originally published before on)
+- We accept contributions from everyone, Please make sure to request review from the contributos when you are confident your piece is ready for publishing.
+
+
+
+# Headings
+
+You can use up to six levels of headings in Markdown.
+
 
 # Heading 1
 
@@ -67,5 +82,4 @@ Alternatively, you can use the pre and code tags in HTML:
 In this guide, we have shown you how to write an article using Nuxt Content, and how to structure your Markdown file, add images, and include code blocks. With Nuxt Content.
 
 Happy Writing and can't wait to read your article.
-
 
