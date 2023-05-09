@@ -22,8 +22,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.0",
-    "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.6.3",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.1",
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxtjs/tailwindcss": "^6.6.7",
     "@tailwindcss/typography": "^0.5.9",
