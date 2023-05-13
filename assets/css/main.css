@@ -30,7 +30,12 @@ h4,
 h5,
 h6 {
   @apply font-header;
+  color: black;
 }
+
+.nuxt-content a {
+    @apply dark:text-[#E9FEF5];
+  }
 
 .ph2 {
   @apply py-6 text-3xl font-semibold leading-tight text-center text-gray-900 dark:text-[#E9FEF5];
@@ -84,25 +89,13 @@ ul li {
 }
 
 .page-heading > .wrapper {
-  @apply max-w-3xl m-auto;
+  @apply max-w-3xl m-auto dark:text-[#E9FEF5];
 }
 
 .page-section {
-  @apply p-4 py-8 m-auto max-w-3xl;
+  @apply p-4 py-8 m-auto max-w-3xl dark:text-[#E9FEF5];
 }
 
 .article-list {
-  @apply flex flex-col gap-6;
-}
-
-.article-item {
-  @apply pt-6 first-of-type:border-none border-t border-slate-200;
-}
-
-.article-item a {
-  @apply no-underline;
-}
-
-.article-item > * > .wrapper {
-  @apply flex items-start gap-4;
+  @apply flex flex-col gap-6 dark:text-[#E9FEF5]
 }

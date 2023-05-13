@@ -93,133 +93,134 @@ const copyToClipboard = async () => {
 </script>
 
 <template>
-  <main id="main" class="article-main">
-    <Toast
-      :show="openToast"
-      message="Link copied to clipboard."
-      @close="openToast = false"
-    >
-      <template #toastIcon>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          class="w-5 h-5 stroke-blue-600 pt-30"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-        </svg>
-      </template>
-    </Toast>
-    <header v-if="data.article" class="article-header">
-      <div class="flex items-center md:flex-row flex-col justify-between py-6">
-        <div class="flex items-center gap-x-4 pb-8 md:pb-0">
-          <p
-            v-for="(author, index) in data.article.authorNames"
-            :key="index"
-            class="text-lg font-bold"
+  <div class="dark:bg-black dark:text-[#E9FEF5]">
+    <main id="main" class="article-main">
+      <Toast
+        :show="openToast"
+        message="Link copied to clipboard."
+        @close="openToast = false"
+      >
+        <template #toastIcon>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="w-5 h-5 stroke-blue-600 pt-30"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-            {{ author }}
-          </p>
-          <p class="w-2 h-2 bg-gray-400 rounded-full" />
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+        </template>
+      </Toast>
+      <header v-if="data.article" class="article-header">
+        <div class="flex items-center md:flex-row flex-col justify-between py-6">
+          <div class="flex items-center gap-x-4 pb-8 md:pb-0">
+            <p
+              v-for="(author, index) in data.article.authorNames"
+              :key="index"
+              class="text-lg font-bold"
+            >
+              {{ author }}
+            </p>
+            <p class="w-2 h-2 bg-gray-400 rounded-full" />
+            <span>
+              <span class="font-bold">{{ readingTime(data.article) }}</span>
+              min read
+            </span>
+          </div>
+          <div class="flex items-center gap-x-7 h-6">
+            <a :href="twitterShareLink" class="text-gray-400 w-6" target="_blank">
+              <Twitter fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
+            </a>
+            <a :href="linkedinShareLink" target="_blank" class="text-gray-400 w-6">
+              <Linkedin fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
+            </a>
+            <a :href="telegramShareLink" target="_blank" class="text-gray-400 w-6">
+              <Telegram fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
+            </a>
+            <a :href="redditShareLink" target="_blank" class="text-gray-400 w-6">
+              <Reddit fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
+            </a>
+            <a :href="whatsappShareLink" target="_blank" class="text-gray-400 w-6">
+              <Whatsapp fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
+            </a>
+            <a :href="emailShareLink" target="_blank" class="text-gray-400 w-6">
+              <Mail fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
+            </a>
+            <a href="#" class="text-gray-400 w-6" @click.prevent="copyToClipboard">
+              <Share fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" class="w-full" />
+            </a>
+          </div>
+        </div>
+        <h1 class="pt-3 heading">
+          {{ data.article.title }}
+        </h1>
+        <div class="my-4 supporting">
           <span>
-            <span class="font-bold">{{ readingTime(data.article) }}</span>
-            min read
+            {{ data.article.description }}
           </span>
         </div>
-        <div class="flex items-center gap-x-7 h-6">
-          <a :href="twitterShareLink" class="text-gray-400 w-6" target="_blank">
-            <Twitter fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
-          </a>
-          <a :href="linkedinShareLink" target="_blank" class="text-gray-400 w-6">
-            <Linkedin fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
-          </a>
-          <a :href="telegramShareLink" target="_blank" class="text-gray-400 w-6">
-            <Telegram fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
-          </a>
-          <a :href="redditShareLink" target="_blank" class="text-gray-400 w-6">
-            <Reddit fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
-          </a>
-          <a :href="whatsappShareLink" target="_blank" class="text-gray-400 w-6">
-            <Whatsapp fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
-          </a>
-          <a :href="emailShareLink" target="_blank" class="text-gray-400 w-6">
-            <Mail fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" />
-          </a>
-          <a href="#" class="text-gray-400 w-6" @click.prevent="copyToClipboard">
-            <Share fill-class="rgb(156 163 175)" hover="rgb(107 114 128)" class="w-full" />
-          </a>
-        </div>
-      </div>
-      <h1 class="pt-3 heading">
-        {{ data.article.title }}
-      </h1>
-      <div class="my-4 supporting">
-        <span>
-          {{ data.article.description }}
-        </span>
-      </div>
 
-      <div class="img-cont h-[300px] lg:h-[600px] my-4">
-        <img
-          :src="`${data.article.imgurl}`"
-          :alt="data.article.title"
-          class="rounded-lg"
+        <div class="img-cont h-[300px] lg:h-[600px] my-4">
+          <img
+            :src="`${data.article.imgurl}`"
+            :alt="data.article.title"
+            class="rounded-lg"
+          >
+        </div>
+        <a
+          :href="`${data.article.imgurl}`"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex justify-center my-2 text-base no-underline hover:underline hover:underline-offset-8"
         >
-      </div>
-      <a
-        :href="`${data.article.imgurl}`"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex justify-center my-2 text-base no-underline hover:underline hover:underline-offset-8"
-      >
-        {{ data.article.attribution }}
-      </a>
-      <ul class="flex gap-x-4">
-        <li v-for="(tag, i) in data.article.tags" :key="i" class="tag">
-          {{ tag }}
-        </li>
-      </ul>
-    </header>
-    <hr>
-    <section class="mb-2 article-section">
-      <article class="article">
-        <ContentRenderer :value="data.article">
-          <ContentRendererMarkdown :value="data.article" />
-        </ContentRenderer>
-      </article>
-    </section>
-  </main>
+          {{ data.article.attribution }}
+        </a>
+        <ul class="flex gap-x-4 pb-4">
+          <li v-for="(tag, i) in data.article.tags" :key="i" class="tag">
+            {{ tag }}
+          </li>
+        </ul>
+      </header>
+      <hr>
+      <section class="mb-2 article-section">
+        <article class="article dark:text-white">
+          <ContentRenderer :value="data.article">
+            <ContentRendererMarkdown :value="data.article" />
+          </ContentRenderer>
+        </article>
+      </section>
+    </main>
+  </div>
 </template>
 
 <style scoped>
 .article-main {
-  @apply p-4 max-w-5xl m-auto;
+  @apply p-4 max-w-5xl m-auto dark:text-[#E9FEF5];
 }
-
-.article-header {
-  @apply p-4 py-6;
+.article a{
+  @apply dark:text-[#E9FEF5];
 }
 
 .article-header .heading {
-  @apply font-extrabold text-5xl;
+  @apply font-extrabold text-5xl dark:text-[#E9FEF5];
 }
 
 .article-header .supporting {
-  @apply font-medium text-lg;
+  @apply font-medium text-lg dark:text-[#E9FEF5];
 }
 
 .article-section {
-  @apply grid grid-cols-8;
+  @apply grid grid-cols-8 dark:text-[#E9FEF5];
 }
 
 .aside {
-  @apply col-span-full md:col-span-2 row-start-1 w-full pt-14;
+  @apply col-span-full md:col-span-2 row-start-1 w-full pt-14 dark:text-[#E9FEF5];
 }
 
 .aside .toc {
@@ -227,15 +228,6 @@ const copyToClipboard = async () => {
 }
 
 .article {
-  @apply col-span-full md:col-span-6 md:col-start-1 md:row-start-1 prose w-full p-4 max-w-3xl m-auto;
-}
-.article[data-v-2c96bb26] :where(ul > li):not(:where([class~="not-prose"] *)) {
-  @apply text-base;
-}
-.article[data-v-02b6418b] :where(a):not(:where([class~="not-prose"] *)) {
-  @apply no-underline text-2xl;
-}
-.article[data-v-02b6418b] :where(a):not(:where([class~="not-prose"] *)):hover {
-  @apply underline;
+  @apply col-span-full md:col-span-6 md:col-start-1 md:row-start-1 prose w-full p-4 max-w-3xl m-auto dark:text-[#E9FEF5];
 }
 </style>

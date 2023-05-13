@@ -29,7 +29,7 @@ import ArrowRight from './icons/ArrowRight.vue'
         </div>
       </ContentList>
     </div>
-    <div class="lg:w-3/5 mx-auto w-full pt-10">
+    <div class="lg:w-3/5 mx-auto w-full py-10">
       <!-- TODO: setup the newsletter  for now we dont have an newsletter setup -->
       <div class="bg-green-400 py-8 dark:text-black">
         <div>

@@ -5,7 +5,7 @@ const year = new Date().getFullYear()
 <template>
   <footer class="bg-[#E9FEF5] w-full lg:px-0 px-5 dark:bg-[#022817] dark:text-[#E9FEF5]">
     <div class="lg:w-3/5 mx-auto border-b-2 border-[rgba(233, 254, 245, 0.5)] py-6">
-      <h2 class="text-4xl py-3 font-semibold">
+      <h2 class="text-4xl py-3 font-semibold dark:text-white">
         Vuejs Kenya
       </h2>
       <p class="text-base">
