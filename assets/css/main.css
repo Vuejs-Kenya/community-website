@@ -33,10 +33,6 @@ h6 {
   color: black;
 }
 
-.nuxt-content a {
-    @apply dark:text-[#E9FEF5];
-  }
-
 .ph2 {
   @apply py-6 text-3xl font-semibold leading-tight text-center text-gray-900 dark:text-[#E9FEF5];
 }
@@ -98,4 +94,8 @@ ul li {
 
 .article-list {
   @apply flex flex-col gap-6 dark:text-[#E9FEF5]
+}
+.article-section a{
+  @apply dark:text-[#E9FEF5] underline underline-offset-4;
+
 }

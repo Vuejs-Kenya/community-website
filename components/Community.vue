@@ -3,7 +3,7 @@
 <template>
   <div class="py-4 dark:bg-[#010D08] dark:text-[#E9FEF5]">
     <div class="w-4/5 mx-auto lg:w-3/5">
-      <h1 class="py-8 text-4xl font-semibold">
+      <h1 class="py-8 text-4xl font-semibold dark:text-[#E9FEF5]">
         We are an awesome community
       </h1>
       <div class="text-xl">
