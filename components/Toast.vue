@@ -37,10 +37,10 @@ watch(
 
 <template>
   <Teleport v-if="show" to="body">
-    <div class="fixed flex justify-center w-full top-10">
+    <div class="fixed flex justify-center w-full top-20">
       <div
         id="toast-simple"
-        class="mx-3 flex items-center p-4 w-full max-w-lg text-gray-400 bg-gray-800 rounded-lg shadow"
+        class="mx-3 flex items-center px-4 py-5 w-full max-w-lg text-gray-400 bg-gray-800 rounded-lg shadow"
         role="alert"
       >
         <slot name="toastIcon" />

@@ -1,79 +1,64 @@
 <script setup lang="ts">
-defineProps({
-  path: String,
-  img: String,
-  title: String,
-  tags: Object,
-  date: String,
-  authorsNames: Array<string>,
-  authorsImages: Array<string>,
-})
+import { withDefaults } from 'vue'
+import { convertDate } from '~/utils/helpers'
+import type { Article } from '~/utils/interfaces'
 
-function convertDate(date: string) {
-  const da = new Date(date)
-  return da.toLocaleString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-}
+withDefaults(
+  defineProps<{
+    articleInfo: Article
+  }>(),
+  {},
+)
 </script>
 
 <template>
   <article>
     <div
-      class="flex items-center ml-2 antialiased transition duration-500 ease-in-out transform hover:scale-105"
+      class="flex border border-gray-300 rounded-lg overflow-hidden hover:shadow-lg w-[400px] dark:border-black"
     >
-      <router-link :to="path ?? ''">
+      <router-link :to="articleInfo._path" class="w-full">
         <img
-          :src="img"
-          :alt="title"
-          class="object-cover object-center w-[400px] h-[240px]"
+          :src="articleInfo.imgurl"
+          :alt="`Article image on ${articleInfo.subtitle}`"
+          class="object-cover object-center h-[240px] w-full"
           loading="eager"
-          width="370"
-          height="240"
         >
 
         <div>
-          <div class="py-6 bg-white">
+          <div class="px-5 py-3 bg-white">
             <div class="flex items-baseline pb-2">
-              <ul>
-                <li v-for="tag in tags" :key="tag" class="tag">
+              <ul class="flex gap-x-3">
+                <li v-for="(tag, index) in articleInfo.tags" :key="index" class="tag">
                   {{ tag }}
                 </li>
               </ul>
             </div>
 
-            <h4 class="py-2 text-xl font-semibold leading-tight truncate">
-              {{ title }}
+            <h4 class="pt-4 pb-2 text-xl font-semibold leading-tight truncate dark:text-black">
+              {{ articleInfo.subtitle }}
             </h4>
-            <div class="flex items-center mt-2 leading-relaxed gap-x-2">
-              <div class="author-image">
-                <img
-                  class="bg-no-repeat bg-cover border-2 rounded-full w-11 h-11 border-slate-400"
-                  :src="img"
-                  :alt="`Author image of ${
-                    authorsNames[authorsNames?.length - 1]
-                  }`"
-                  loading="eager"
-                >
-              </div>
-              <div v-if="authorsNames?.length === 1">
-                <span class="px-2 text-base font-semibold">{{
-                  authorsNames[authorsNames?.length - 1]
-                }}</span>
-              </div>
-              <div v-else class="flex text-sm font-semibold gap-x-2">
-                <span v-for="(author, index) in authorsNames" :key="author">
+            <div class="flex items-center py-3 leading-relaxed gap-x-1 md:gap-x-2">
+              <img
+                v-for="(author_image, index) in articleInfo.authorImages"
+                :key="index"
+                class="bg-no-repeat bg-cover object-cover rounded-full w-11 h-11 "
+                :src="author_image"
+                :alt="`Author image of ${
+                  articleInfo.authorNames[index]
+                }`"
+                loading="eager"
+              >
+              <div class="flex font-semibold gap-x-2 dark:text-black">
+                <p v-for="(author, index) in articleInfo.authorNames" :key="index">
                   {{ author }}
                   <span
-                    v-if="index < authorsNames.length - 1"
+                    v-if="index < articleInfo.authorNames.length - 1"
                     class="font-normal"
                   >&amp;</span>
-                </span>
+                </p>
               </div>
-              <p class="w-2 h-2 mx-2 bg-gray-600 rounded-full" />
-              <span class="pl-2 text-base">{{ convertDate(date ?? "") }} </span>
+              <p class="w-1 h-1 mx-2 bg-gray-400 rounded-full" />
+              <span class="pl-2 text-base dark:text-black">{{ convertDate(articleInfo.createdAt) }} </span>
             </div>
           </div>
         </div>

@@ -36,7 +36,7 @@ const props = defineProps({
       {{ speaker.talk }}
     </p>
 
-    <div class="flex justify-center mt-3 -mx-2">
+    <div class="flex justify-center pt-3">
       <a
         :href="speaker.socials.twitter"
         target="_blank"

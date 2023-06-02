@@ -12,23 +12,16 @@ useHead({
 </script>
 
 <template>
-  <section>
+  <section class="dark:bg-black dark:text-white">
     <Blogheader />
     <ContentList v-slot="{ list }" path="/blogs">
       <div
-        class="w-3/5 mx-auto flex flex-wrap min-h-[830px] gap-x-6 gap-y-8 pt-20 pb-10"
+        class="w-3/5 mx-auto flex flex-wrap justify-center min-h-[830px] gap-x-8 gap-y-8 pt-20 pb-10 "
       >
         <Article
-          v-for="article in list"
-          :key="article._path"
+          v-for="(article, index) in list"
+          :key="index"
           :article-info="article"
-          :path="article._path"
-          :img="article.imgurl"
-          :title="article.subtitle"
-          :tags="article.tags"
-          :date="article.createdAt"
-          :authors-names="article.authorsNames"
-          :authors-images="article.authorImages"
         />
       </div>
     </ContentList>

@@ -19,25 +19,17 @@ import ArrowRight from './icons/ArrowRight.vue'
       </div>
       <ContentList v-slot="{ list }" path="/blogs">
         <div
-          class=" flex flex-wrap lg:justify-between justify-center gap-y-5  pt-20"
+          class=" flex flex-wrap gap-x-8  gap-y-5  pt-20"
         >
           <Article
-            v-for="article in list"
-            :key="article._path"
+            v-for="(article, index) in list"
+            :key="index"
             :article-info="article"
-            :path="article._path"
-            :img="article.imgurl"
-            :title="article.subtitle"
-            :tags="article.tags"
-            :date="article.createdAt"
-            :description="article.description"
-            :authors-names="article.authorsNames"
-            :authors-images="article.authorImages"
           />
         </div>
       </ContentList>
     </div>
-    <div class="lg:w-3/5 mx-auto w-full pt-10">
+    <div class="lg:w-3/5 mx-auto w-full py-10">
       <!-- TODO: setup the newsletter  for now we dont have an newsletter setup -->
       <div class="bg-green-400 py-8 dark:text-black">
         <div>

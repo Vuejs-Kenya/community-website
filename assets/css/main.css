@@ -30,19 +30,20 @@ h4,
 h5,
 h6 {
   @apply font-header;
+  color: black;
 }
 
 .ph2 {
-  @apply py-6 text-3xl font-semibold leading-tight text-center text-gray-900;
+  @apply py-6 text-3xl font-semibold leading-tight text-center text-gray-900 dark:text-[#E9FEF5];
 }
 .ph1 {
-  @apply mt-4 text-lg leading-7 text-gray-600 tracking-wide;
+  @apply mt-4 text-lg leading-7 text-gray-600 tracking-wide dark:text-[#E9FEF5];
 }
 .bh {
   @apply font-semibold text-[18px] tracking-wide text-xl;
 }
 .tag {
-  @apply inline-block px-3 py-1 mr-2 text-xs leading-relaxed tracking-wide uppercase bg-gray-200 rounded-md;
+  @apply inline-block px-3 py-1.5 text-xs leading-relaxed tracking-wide uppercase bg-gray-200 rounded dark:text-black;
 }
 ul li {
   @apply mt-4;
@@ -84,25 +85,17 @@ ul li {
 }
 
 .page-heading > .wrapper {
-  @apply max-w-3xl m-auto;
+  @apply max-w-3xl m-auto dark:text-[#E9FEF5];
 }
 
 .page-section {
-  @apply p-4 py-8 m-auto max-w-3xl;
+  @apply p-4 py-8 m-auto max-w-3xl dark:text-[#E9FEF5];
 }
 
 .article-list {
-  @apply flex flex-col gap-6;
+  @apply flex flex-col gap-6 dark:text-[#E9FEF5]
 }
+.article-section a{
+  @apply dark:text-[#E9FEF5] underline underline-offset-4;
 
-.article-item {
-  @apply pt-6 first-of-type:border-none border-t border-slate-200;
-}
-
-.article-item a {
-  @apply no-underline;
-}
-
-.article-item > * > .wrapper {
-  @apply flex items-start gap-4;
 }

@@ -7,7 +7,7 @@ useHead({
 </script>
 
 <template>
-  <section class="py-10">
+  <section class="py-10 dark:text-[#E9FEF5] dark:bg-black">
     <div class="w-full px-4 mx-2 lg:w-3/5 lg:mx-auto sm:px-6 lg:px-8">
       <h2 class="ph2">
         About Vuejs Kenya

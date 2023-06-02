@@ -9,17 +9,18 @@ alt: Loading Routes Automatically
 
 excerpt: Loading Routes Automatically
 
-imgurl: https://images.pexels.com/photos/7664355/pexels-photo-7664355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+imgurl: https://images.unsplash.com/photo-1680810094604-cd68532ebc56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80
 
 tags: ["Vue 3", "routing"]
 
-authorsNames: ["John Philip"]
+authorNames: ["John Philip"]
 
-authorsImages: ["https://avatars.githubusercontent.com/u/60175531?v=4"]
+authorImages: ["https://avatars.githubusercontent.com/u/60175531?v=4"]
 
 createdAt: 6/25/2021
 
-attribution: Photo by Red Zeppelin from Pexels
+attribution: Photo by Myles Bloomfield on Unsplash
+
 ---
 
 In this article, we will learn how to automatically load routes in Vue 3.

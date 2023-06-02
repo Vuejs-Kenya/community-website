@@ -18,9 +18,9 @@ import { metrics } from '~~/utils/metrics'
           </p>
         </div>
       </div>
-<div class="flex lg:justify-between justify-center">
-  <a href="http://" target="_blank" rel="noopener noreferrer" class="py-3 px-24 lg:px-6 bg-green-400 hover:bg-green-500 rounded-lg">Sponsor us</a>
-</div>
+      <div class="flex lg:justify-between justify-center">
+        <a href="http://" target="_blank" rel="noopener noreferrer" class="py-3 px-24 lg:px-6 bg-green-400 hover:bg-green-500 rounded-lg">Sponsor us</a>
+      </div>
     </div>
   </div>
 </template>

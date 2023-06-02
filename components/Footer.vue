@@ -5,10 +5,12 @@ const year = new Date().getFullYear()
 <template>
   <footer class="bg-[#E9FEF5] w-full lg:px-0 px-5 dark:bg-[#022817] dark:text-[#E9FEF5]">
     <div class="lg:w-3/5 mx-auto border-b-2 border-[rgba(233, 254, 245, 0.5)] py-6">
-      <h2 class="text-4xl py-3 font-semibold">
+      <h2 class="text-4xl py-3 font-semibold dark:text-white">
         Vuejs Kenya
       </h2>
-      <p class="text-base">Where Vue Developers Connect, Collaborate & Learn Together</p>
+      <p class="text-base">
+        Where Vue Developers Connect, Collaborate & Learn Together
+      </p>
       <div class="flex justify-between pt-8">
         <div class="w-[300px] flex flex-col gap-y-3">
           <a href="/blogs" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Blog</a>
