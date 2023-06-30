@@ -5,10 +5,10 @@ export const speakers = ref<speakerInfo[]>([
     name: 'Selemon Brahanu',
     talk: 'Supuercharge your webapps with speed, scalability and modernity',
     image:
-      '',
+      'https://avatars.githubusercontent.com/u/106826371?v=4',
     socials: {
-      twitter: '',
-      github: '',
+      twitter: 'https://twitter.com/selemondev',
+      github: 'https://github.com/selemondev',
       youtube: '',
       Facebook: '',
     },
