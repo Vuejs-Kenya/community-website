@@ -2,6 +2,18 @@ import type { speakerInfo } from '@/utils/interfaces'
 
 export const speakers = ref<speakerInfo[]>([
   {
+    name: 'Selemon Brahanu',
+    talk: 'Supuercharge your webapps with speed, scalability and modernity',
+    image:
+      '',
+    socials: {
+      twitter: '',
+      github: '',
+      youtube: '',
+      Facebook: '',
+    },
+  },
+  {
     name: 'Joseph Wamburu',
     talk: 'Navigating DevOps and Mastering Vue, A Developers Tale',
     image:
