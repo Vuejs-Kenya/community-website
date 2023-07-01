@@ -19,18 +19,20 @@ function setMode() {
     <div
       class="flex justify-around w-full h-16 mx-auto text-lg font-normal text-black dark:text-[#E9FEF5] lg:container"
     >
-      <div>
-        <nuxt-link to="/" class="flex gap-x-2">
-          <img
-            src="~/assets/vuejskenyalogo.png"
-            alt="Vue.js Kenya"
-            class="object-cover h-14 w-14"
-          >
+      <nuxt-link to="/">
+        <div class="flex flex-row items-center gap-x-2 py-2">
+          <div class="logo-cover">
+            <img
+              src="~/assets/vuejskenyalogo.svg"
+              alt="Vue.js Kenya"
+              class="object-cover"
+            />
+          </div>
           <span class="hidden my-auto font-semibold sm:block">
             Vuejs Kenya
           </span>
-        </nuxt-link>
-      </div>
+        </div>
+      </nuxt-link>
       <div class="flex py-2 gap-x-8">
         <nuxt-link
           to="/about"
@@ -74,4 +76,9 @@ function setMode() {
   </header>
 </template>
 
-<style></style>
+<style>
+.logo-cover img {
+  height: 3rem;
+  width: 3rem;
+}
+</style>
