@@ -93,4 +93,5 @@ sw.*
 # Other
 NOTES.md
 .vscode
+.output
 package-lock.json
