@@ -26,7 +26,7 @@
           href="https://t.me/+UrkVB6D63bnDom4l"
           target="_blank"
           rel="noopener noreferrer"
-          class="py-3 px-5 bg-green-400 hover:bg-green-500 text-black rounded"
+          class="px-5 py-3 text-white bg-green-400 rounded hover:bg-green-500"
         >
           Join our Telegram Channel
         </a>

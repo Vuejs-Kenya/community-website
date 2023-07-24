@@ -37,6 +37,7 @@
     }
   },
   "dependencies": {
+    "tailwind-scrollbar": "^3.0.4"
     "@nuxtjs/color-mode": "^3.3.0"
   }
 }
