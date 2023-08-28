@@ -27,7 +27,7 @@
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.9",
-    "eslint": "^8.39.0",
+    "eslint": "^8.48.0",
     "husky": "^8.0.3",
     "nuxt": "^3.3.3"
   },
