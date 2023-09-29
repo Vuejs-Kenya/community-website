@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.0",
-    "@commitlint/cli": "^17.6.6",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.6.7",
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
