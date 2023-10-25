@@ -31,15 +31,11 @@ const year = new Date().getFullYear()
         <div class="w-[300px] flex flex-col gap-y-3">
           <a href="mailto:vuejskenya@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Email us</a>
           <a href="https://www.meetup.com/vue-js-kenya/" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Meetup</a>
-          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Facebook</a>
-          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">LinkedIn</a>
           <a href="http://www.twitter.com/kenyavue" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Twitter</a>
         </div>
         <div class="w-[300px] flex flex-col gap-y-3">
-          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Telegram</a>
-          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Slack</a>
+          <a href="https://t.me/+UrkVB6D63bnDom4l" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Telegram</a>
           <a href="https://github.com/Vuejs-Kenya/community-website" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">GitHub</a>
-          <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">Whatsapp</a>
           <a href="https://www.youtube.com/@vuejskenya6612" target="_blank" rel="noopener noreferrer" class="hover:underline hover:underline-offset-8 hover:font-semibold text-base">YouTube</a>
         </div>
       </div>

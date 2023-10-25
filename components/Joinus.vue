@@ -4,12 +4,7 @@ import Meetup from '@/components/icons/meetup.vue'
 import YouTube from '@/components/icons/Yt.vue'
 import Telegram from '@/components/icons/telegram.vue'
 import GitHub from '@/components/icons/github.vue'
-import LinkedIn from '@/components/icons/linkedin.vue'
-import Whatsapp from '@/components/icons/whatsapp.vue'
 import Mail from '@/components/icons/mail.vue'
-import Slack from '@/components/icons/slack.vue'
-import Facebook from '@/components/icons/fb.vue'
-import Signal from '@/components/icons/signal.vue'
 </script>
 
 <template>
@@ -34,7 +29,7 @@ import Signal from '@/components/icons/signal.vue'
           <YouTube fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
 
         </a>
-        <a class="w-28 h-20" href="" target="_blank">
+        <a class="w-28 h-20" href="https://t.me/+UrkVB6D63bnDom4l" target="_blank">
 
           <Telegram fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
 
@@ -44,35 +39,9 @@ import Signal from '@/components/icons/signal.vue'
           <GitHub fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
 
         </a>
-        <a class="w-28 h-20" href="" target="_blank">
-
-          <LinkedIn fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
-
-        </a>
-        <a class="w-28 h-20" href="" target="_blank">
-
-          <Whatsapp fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
-
-        </a>
-        <a class="w-28 h-20" href="" target="_blank">
-
-          <Slack fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
-
-        </a>
         <a class="w-28 h-20" href="mailto:vuejskenya@gmail.com" target="_blank">
 
           <Mail fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
-
-        </a>
-
-        <a class="w-28 h-20" href="" target="_blank">
-
-          <Facebook fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
-
-        </a>
-        <a ref="" class="w-28 h-20" target="_blank">
-
-          <Signal fill-class="rgb(74, 222, 128)" hover="rgb(34, 197, 94)" />
 
         </a>
       </div>
